@@ -1,3 +1,10 @@
+# restarted with my portfolio again
+Im tyring out different things and really dont know  where i will end up with this one
+As long as I learn new things and explore, this can change in any direction
+
+Feel free to check out the progress at robportfolioideas.surge.sh
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
