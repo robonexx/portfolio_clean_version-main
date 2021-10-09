@@ -42,7 +42,7 @@ padding: 0 1.5em;
              border-left: solid  15px #fff;
             border-top: solid transparent 15px;
             border-bottom: solid transparent 15px;
-            transform: translateX(-70%) translateY(-10%);
+            transform: translateX(-70%) translateY(-25%);
             position: absolute;
             z-index: -1;
             content: "";
@@ -52,7 +52,7 @@ padding: 0 1.5em;
     
     a {
         font-size: 1.8rem;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Inter', sans-serif;
         text-decoration: none;
         line-height: 1;
         color: #FCFCFB;
@@ -64,7 +64,7 @@ padding: 0 1.5em;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 100;
             text-align: right;
-            color: #121212;
+            color: #0c4941;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -73,14 +73,14 @@ padding: 0 1.5em;
         &:focus {
             a {
         transform: scale(1.05);
-        color: #f3be58;
+        color: rgb(3, 255, 150);
 
             }
             small {
                 color: #FCFCFB;
             }
             &::after {
-                border-left: solid 15px #eea00f;
+                border-left: solid 15px #00836d;
             }
         }
 

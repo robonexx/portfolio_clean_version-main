@@ -27,28 +27,35 @@ const Home = () => {
         
       </div>
      
-      <section className="home-section-top left">
+      <section className="home-section-top">
         <h2>
-          <b>Frontend developer</b><br />
-          with <b>design</b> & <small> backend knowledge</small>.<br />
-          Who loves <code>(code === true)</code> <br/>
-          Based in Stockholm, Sweden <br />
+          <b>Web developer</b><br />
+          <b>Frontend, Design</b> & <small> backenD</small>.<br />
+          Who loves <code>(code === true)</code> <br/><br/>
+          Based in Stockholm, Sweden <br /><br/>
           Since you are here you are probably looking for<br />
           for someone to help build your website or some<br />
-          other product that needs development.
+          other product/ idea that needs to become reality.
         </h2>
       </section>
   
-      <section className="home-section-top right">
+      <section className="home-section-mid">
         <h2>
           I belive that <br/>
-          <b>Creativity, design, art and technology</b><br />
-          is the tools to solve future problems.<br />
+          <b>Creativity, <br/>art, <br/>design, <br/> and technology</b><br />
+          <i>in the hands of the right minds </i><br/>
+          has the tools to solve future problems.<br />
            <br />
-          By creating smart user interfaces and useful interactions, we can develope rich web experiences & web applications. <br /><br />
-          When not learning new & playing around with code<br />
-          I´m working as a <b>dance</b> teacher
           </h2>
+      </section>
+      <section className="home-section-bottom" >
+        <h2>
+        By creating smart <b>user interfaces & useful interactions</b>, we can develope rich <b>web experiences & web applications</b>. <br /><br />
+          When not learning new & playing around with <br/>
+          <code>if(coding !== true)</code><br />
+          I´m working as a <b>dance</b> teacher
+        </h2>
+      
       </section>
      
     </div>
