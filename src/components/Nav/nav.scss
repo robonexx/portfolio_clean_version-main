@@ -64,7 +64,7 @@ padding: 0 1.5em;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 100;
             text-align: right;
-            color: #0c4941;
+            color: #323720;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -73,14 +73,14 @@ padding: 0 1.5em;
         &:focus {
             a {
         transform: scale(1.05);
-        color: rgb(3, 255, 150);
+        color: #f3be58;
 
             }
             small {
                 color: #FCFCFB;
             }
             &::after {
-                border-left: solid 15px #00836d;
+                border-left: solid 15px #f3bd58da;
             }
         }
 
