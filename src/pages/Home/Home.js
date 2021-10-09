@@ -10,11 +10,12 @@ import ShapeTwo from '../../components/design/shapes/ShapeTwo';
 const Home = () => {
   return (
     <div className="home-wrapper">
-      <div className="logo-wrapper">
-        <Logo /><h1>Wägar</h1>
+      <div className="headline-wrapper">
+        <h4>Hello, my name is </h4>
+       <h1>Robert Wägar</h1>
       </div>
 
-      <img src={PortImg} alt=""
+      {/* <img src={PortImg} alt=""
         className="image" />
       <div className="shapes">
         <div>
@@ -22,20 +23,18 @@ const Home = () => {
         </div>
         <div>
         <ShapeTwo />
-        </div>
-        
-        
-      </div>
+        </div>        
+      </div> */}
      
       <section className="home-section-top">
         <h2>
-          <b>Web developer</b><br />
-          <b>Frontend, Design</b> & <small> backenD</small>.<br />
-          Who loves <code>(code === true)</code> <br/><br/>
-          Based in Stockholm, Sweden <br /><br/>
-          Since you are here you are probably looking for<br />
-          for someone to help build your website or some<br />
-          other product/ idea that needs to become reality.
+          I´m a <b>DEVELOPER</b> with focus on<br />
+          <b>Frontend, </b> <small> backenD</small> & <b>Design.</b><br />
+          <br/><br/>
+          I´m currently Based in Stockholm, Sweden <br /><br/>
+          I´m open to help you if you are looking for <br />
+          a developer or need help with building your<br />
+          website or other web based applications
         </h2>
       </section>
   
@@ -50,7 +49,10 @@ const Home = () => {
       </section>
       <section className="home-section-bottom" >
         <h2>
-        By creating smart <b>user interfaces & useful interactions</b>, we can develope rich <b>web experiences & web applications</b>. <br /><br />
+          By creating smart <br />
+          <b>user interfaces & useful interactions</b> <br />
+          we can develope rich <br />
+          <b>web experience & web applications</b> <br /><br />
           When not learning new & playing around with <br/>
           <code>if(coding !== true)</code><br />
           I´m working as a <b>dance</b> teacher

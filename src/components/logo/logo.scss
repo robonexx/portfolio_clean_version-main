@@ -1,14 +1,11 @@
 .logo {
-    stroke: #FCFCFB;
-   fill: #000;
+    stroke:  #323720;
    width: 200px;
    stroke-width: 4px;
+   fill: none;
 
    @media (max-width: 960px) {
        width: 100px;
+       stroke: #323720;
    }
-}
-
-.logo:hover > .logo-dot {
-    fill: tomato
 }
