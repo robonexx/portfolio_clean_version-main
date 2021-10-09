@@ -91,6 +91,9 @@
     top: 5%;
     right: 40%;
     
+@media (max-width: 960px) {
+        display: none;
+        }
     .shape1 {
         fill: #b7c401ad;
         transition: rotate 0.4s ease-in-out;
