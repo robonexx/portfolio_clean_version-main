@@ -28,13 +28,11 @@ const Home = () => {
      
       <section className="home-section-top">
         <h2>
-          I´m a <b>DEVELOPER</b> with focus on<br />
-          <b>Frontend, </b> <small> backenD</small> & <b>Design.</b><br />
+          I´m a <b>developer</b> with focus on<br />
+          <b>frontend / </b> <small> backend</small> & <b>design</b><br />
           <br/><br/>
           I´m currently Based in Stockholm, Sweden <br /><br/>
-          I´m open to help you if you are looking for <br />
-          a developer or need help with building your<br />
-          website or other web based applications
+          I´m open to help you if you are looking for a developer or need help with building your website or other web based applications
         </h2>
       </section>
   

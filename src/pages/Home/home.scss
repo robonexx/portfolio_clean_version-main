@@ -13,20 +13,20 @@
     margin: 0 auto;
     width: 80%;
     display: block;
-    top: 15vh;
+    top: 30vh;
     left: 10vw;
     z-index: 10;
 
     @media (max-width: 960px) {
         left: 1rem;
         padding: 0 1rem;
-        width: 90%;
+        width: 80%;
         left: 0;
-        top: 10vh;
+        top: 20vh;
     }
 
     h4 {
-        font-size: 2rem;
+        font-size: 1rem;
         color: #fcfcfb;
         font-weight: 100;
 
@@ -39,14 +39,14 @@
         /* position: absolute;
         left: 15%;
         bottom: -15%; */
-        font-size: 5em;
+        font-size: 3rem;
         color: #f3b358;
         text-transform: uppercase;
         transition: transform 1s ease;
         font-family: 'Playfair Display', sans-serif;
 
         @media (max-width: 960px) {
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
 
         &:hover {
@@ -116,18 +116,18 @@
 
 .home-section-top {
     position: relative;
-    top: 20vh;
+    top: 30vh;
     left: 10vw;
     text-align: left;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     height: 92vh;
-    color: #F3BE58;
+    color: #f3c56f;
 
     @media (max-width: 960px) {
-        top: 15vh;
+        top: 30vh;
         padding: 0 1rem;
-        width: 90%;
+        width: 80%;
         left: 0;
         margin: 0 auto;
         
@@ -135,7 +135,7 @@
     
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 100;
 
         @media (max-width: 960px) {
@@ -143,8 +143,8 @@
         }
 
         b {
-            font-size: 3rem;
-            color: #ccd6f6;
+            font-size: 2rem;
+            color: #dbb992;
             @media (max-width: 960px) {
                 font-size: 1.6rem;
             }
@@ -157,10 +157,10 @@
         small {
             unicode-bidi:bidi-override;
             direction:rtl;
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 800;
             text-shadow: 0 1px 2px rgba(0,0,0,0.4);
-            color: #ccd6f6;
+            color: #dbb992;
             @media (max-width: 960px) {
                 font-size: 1.6rem;
             }
@@ -178,13 +178,13 @@
     width: 80%;
     margin: 0 auto;
     height: 100vh;
-    color: #F3BE58;
+    color: #f3c56f;
     text-align: right;
     z-index: 10;
 
     @media (max-width: 960px) {
         padding: 0 1rem;
-        width: 90%;
+        width: 80%;
         right: 0;
         left: 0;
         margin: 0 auto;
@@ -203,7 +203,7 @@
 
         b {
             font-size: 4rem;
-            color: #ccd6f6;
+            color: #dbb992;
 
             @media (max-width: 960px) {
                 font-size: 1.6rem;
@@ -219,13 +219,13 @@
     width: 80%;
     margin: 0 auto;
     height: 100vh;
-    color: #F3BE58;
+    color: #f3c56f;
     text-align: left;
     z-index: 10;
 
     @media (max-width: 960px) {
         padding: 0 1rem;
-        width: 90%;
+        width: 80%;
         left: 0;
         margin: 0 auto;
         height: 40vh;
@@ -242,7 +242,7 @@
 
         b {
             font-size: 4rem;
-            color: #ccd6f6;
+            color: #dbb992;
 
             @media (max-width: 960px) {
                 font-size: 1.6rem;
