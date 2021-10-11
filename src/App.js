@@ -1,6 +1,8 @@
 import React from 'react'
 import './main.scss'
 import Nav from './components/Nav/Nav'
+import SideBar from './components/sidebar/sidebar'
+import Mail from './components/email/Mail'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Projects from './pages/Projects/Projects'
@@ -14,6 +16,8 @@ function App() {
   return (
     <Router>
       <Nav />
+      <SideBar />
+      <Mail />
                   <Switch>
                       <Route exact path="/" component={Home}/>
                       <Route path="/about" component={About}/>
