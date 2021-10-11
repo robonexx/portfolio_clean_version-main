@@ -13,12 +13,12 @@ const Home = () => {
         <motion.h4
           initial={{x: -200, opacity: 0}}
           animate={{ x: 0, opacity: 1 }}
-          transition={{delay: 0.4, duration: 0.3}}
+          transition={{delay: 0.6, duration: 0.3}}
         >Hello, my name is </motion.h4>
         <motion.h1
           initial={{x: -400, opacity: 0}}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.3 }}
+          transition={{ delay: 0.6, duration: 0.3 }}
           whileHover={{scale: 1.1}}
         >Robert Wägar</motion.h1>
       </div>

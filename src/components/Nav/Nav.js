@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom'
-import navItems from '../../content/NavItems'
+/* import navItems from '../../content/NavContent' */
+import MenuItems from '../menuItems/MenuItems'
 import Logo from '../logo/Logo'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import './nav.scss'
 
 
 
-const Nav = () => {
+const Nav = ({idx}) => {
     const [active, setActive] = useState(false)
    
     const handleClick = () => {
@@ -34,7 +35,8 @@ const Nav = () => {
         </motion.div>
         <motion.ul className={active ? "nav-menu active" : "nav-menu"}
         >
-            {navItems.map((item, idx) => {
+          <MenuItems key={idx} />
+            {/* {navItems.map((item, idx) => {
               return (
                 <motion.li key={idx}
                   initial={{ y: -250, opacity: 0 }}
@@ -47,7 +49,7 @@ const Nav = () => {
               </Link>
             </motion.li>
           );
-        })}
+        })} */}
       </motion.ul>
             </div>
 
