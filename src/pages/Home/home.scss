@@ -42,6 +42,7 @@
         text-transform: uppercase;
         transition: transform 1s ease;
         font-family: 'Playfair Display', sans-serif;
+        cursor: pointer;
 
         @media (max-width: 960px) {
             font-size: 2rem;
@@ -105,8 +106,8 @@
 .home-section-mid {
     position: relative;
     top: 5vh;
-    right: 10vw;
-    width: 80%;
+    left: 2vw;
+    width: 60%;
     margin: 0 auto;
     height: 100vh;
     color: #f3c56f;

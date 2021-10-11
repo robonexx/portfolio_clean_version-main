@@ -25,9 +25,13 @@ const Nav = () => {
         >
             <Logo className="logo" />
           </motion.div>
-        <div className="menu-icon" onClick={handleClick}>
+        <motion.div className="menu-icon" onClick={handleClick}
+        initial={{ y: -250, opacity: 0 }}
+        animate={{y: 0, opacity: 1}}
+        transition={{delay: 0.3, duration: 0.3, type: 'tween'}}
+        >
           {active ? <HiX className="hix"/> : <HiMenuAlt3 className="menu3"/>}
-        </div>
+        </motion.div>
         <motion.ul className={active ? "nav-menu active" : "nav-menu"}
         >
             {navItems.map((item, idx) => {
