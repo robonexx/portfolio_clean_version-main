@@ -5,7 +5,7 @@
     background: linear-gradient(
       90deg,
       #f3be58 0%,
-      #1a1d0d 88%
+      #3E332F 88%
     );
     height: 8vh;
     width: 100vw;
@@ -49,7 +49,7 @@
   .nav-links {
 
         padding: 0.5rem 1rem;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-family: 'Inter', sans-serif;
         text-decoration: none;
         line-height: 1;
@@ -71,11 +71,11 @@
   &:focus {
       a {
   transform: scale(1.05);
-  color: #f3be58;
+  color: #E3DCCC;
 
       }
       small {
-          color: #FCFCFB;
+          color: #Fff;
       }
       &::after {
           border-left: solid 15px #f3bd58da;
@@ -113,7 +113,7 @@
       flex-direction: column;
       width: 100vw;
       height: 100vh;
-      padding: 0 0 10vh 10%;
+      padding: 0 0 10vh 15%;
       position: absolute;
       top: 8vh;
       left: -110%;
@@ -127,7 +127,7 @@
         background: linear-gradient(
             90deg,
             #f3be58 0%,
-            #1a1d0d 88%
+            #3E332F 88%
           );
       left: 0;
       opacity: 1;
@@ -139,6 +139,10 @@
         position: relative;
         margin: 2rem 0;
         width: 45%;
+
+        small {
+          opacity: 0;
+        }
     }
     }
 

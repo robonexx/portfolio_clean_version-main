@@ -28,20 +28,19 @@ const Home = () => {
      
       <section className="home-section-top">
         <h2>
-          I´m a <b>developer</b> with focus on<br />
-          <b>frontend / </b> <small> backend</small> & <b>design</b><br />
+          I´m a <b>developer</b> with focus on 
+          <b> frontend / </b> <small> backend</small> & <b>design</b><br />
           <br/><br/>
           I´m currently Based in Stockholm, Sweden <br /><br/>
-          I´m open to help you if you are looking for a developer or need help with building your website or other web based applications
+          I´m a freelancer here to help you if you are looking for a developer or need help with building your website or other web based applications
         </h2>
       </section>
   
       <section className="home-section-mid">
         <h2>
           I belive that <br/>
-          <b>Creativity, <br/>art, <br/>design, <br/> and technology</b><br />
-          <i>in the hands of the right minds </i><br/>
-          has the tools to solve future problems.<br />
+          <b>Creativity, art, design, and technology</b><br />
+          <i>in the hands of the right minds has the tools to solve our future problems.</i>
            <br />
           </h2>
       </section>
@@ -51,9 +50,8 @@ const Home = () => {
           <b>user interfaces & useful interactions</b> <br />
           we can develope rich <br />
           <b>web experience & web applications</b> <br /><br />
-          When not learning new & playing around with <br/>
-          <code>if(coding !== true)</code><br />
-          I´m working as a <b>dance</b> teacher
+          When not learning new & playing around with code<br/>
+          I´m working as a <b>dance</b> teacher & workshop / event producer 
         </h2>
       
       </section>
