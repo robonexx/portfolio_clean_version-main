@@ -5,7 +5,7 @@
     background: linear-gradient(
       90deg,
       #f3be58 0%,
-      #3E332F 88%
+      #1f170c 70%
     );
     height: 8vh;
     width: 100vw;
@@ -33,6 +33,7 @@
     align-items: center;
     margin: 0 1.2rem;
     
+    
 
     &::after {
         border-right: solid 15px transparent;
@@ -49,10 +50,11 @@
   }
   .nav-links {
         padding: 1.7rem 1rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-family: 'Inter', sans-serif;
+        font-family: 'Playfair Display', sans-serif;
         text-decoration: none;
-        color: #FCFCFB;
+        color: #f3be58;
         transition: all 0.3s ease-in-out;
 
         small {
@@ -61,9 +63,8 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 100;
             text-align: right;
-            color: #323720;
+            color: #1f170c;
             transition: all 0.3s ease-in-out;
-            opacity: 0;
         }
   }
   
@@ -116,7 +117,7 @@
       flex-direction: column;
       width: 100vw;
       height: 100vh;
-      padding: 0 0 10vh 15%;
+      padding: 0 0 10vh 5%;
       position: absolute;
       top: 8vh;
       left: -110%;
@@ -130,7 +131,7 @@
         background: linear-gradient(
             90deg,
             #f3be58 0%,
-            #3E332F 88%
+            #1f170c 70%
           );
       left: 0;
       opacity: 1;
@@ -145,18 +146,27 @@
         position: relative;
         width: 45%;
 
+        .nav-links {
+          position: relative;
+          width: 80%; 
+          transition: all 0.6s ease;
+          color: #1f170c;
+
+          &:hover {
+            color: #FCFCFB;
+
+            &::after {
+              border-left: solid 15px #1f170c;
+              opacity: 1;
+          }
+          }
+      }
+      
+
         small {
           opacity: 0;
         }
     }
-    }
-
-    
-
-    .nav-links {
-        position: relative;
-        width: 80%; 
-        transition: all 0.6s ease;
     }
   
     .menu-icon {

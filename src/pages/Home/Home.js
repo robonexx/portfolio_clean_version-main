@@ -31,8 +31,14 @@ const Home = () => {
           I´m a <b>developer</b> with focus on 
           <b> frontend / </b> <small> backend</small> & <b>design</b><br />
           <br/><br/>
-          I´m currently Based in Stockholm, Sweden <br /><br/>
-          I´m a freelancer here to help you if you are looking for a developer or need help with building your website or other web based applications
+          <h2>
+          My goal is to create smart <br />
+          <b>user interfaces & useful interactions</b> <br />
+          by developing rich <br />
+          <b>web experiences & web applications</b> <br /><br />
+          When not learning new & playing around with code<br/>
+          I´m working as a <b>dance</b> teacher & workshop / event producer 
+        </h2>
         </h2>
       </motion.section>
   
@@ -46,12 +52,12 @@ const Home = () => {
       </section>
       <section className="home-section-bottom" >
         <h2>
-          By creating smart <br />
-          <b>user interfaces & useful interactions</b> <br />
-          we can develope rich <br />
-          <b>web experience & web applications</b> <br /><br />
-          When not learning new & playing around with code<br/>
-          I´m working as a <b>dance</b> teacher & workshop / event producer 
+          Lorem ipsum dolor sit amet. <br />
+          <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> <br />
+          Lorem ipsum dolor sit. <br />
+          <b>Lorem ipsum dolor sit amet.</b> <br /><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eos!<br/>
+          Lorem ipsum dolor sit.<b>Lorem.</b> Lorem ipsum dolor sit amet consectetur.
         </h2>
       
       </section>
