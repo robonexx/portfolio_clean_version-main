@@ -11,9 +11,6 @@ import './nav.scss'
 const Nav = () => {
     const [active, setActive] = useState(false)
    
-
-
-
     const handleClick = () => {
         setActive(!active)
     }
@@ -22,22 +19,24 @@ const Nav = () => {
         
       <div className="nav">
         <motion.div
-          initial={{ x: -300, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-        transition={{delay: 0.1, duration: 0.3}}>
+            initial={{ x: -300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.3, type: 'spring', stiffness: 300 }}
+        >
             <Logo className="logo" />
           </motion.div>
-            <div className="menu-icon" onClick={handleClick}>
-        {active ? <HiX className="hix"/> : <HiMenuAlt3 className="menu3"/>}
-      </div>
-      <ul className={active ? "nav-menu active" : "nav-menu"}>
-        {navItems.map((item, idx) => {
-          return (
-            <motion.li key={idx}
-              animate={{y: 0, opacity: 1}}
-              initial={{ y: -250, opacity: 0 }}
-              transition={{delay: 0.3, duration: 0.3}}
-            >
+        <div className="menu-icon" onClick={handleClick}>
+          {active ? <HiX className="hix"/> : <HiMenuAlt3 className="menu3"/>}
+        </div>
+        <motion.ul className={active ? "nav-menu active" : "nav-menu"}
+        >
+            {navItems.map((item, idx) => {
+              return (
+                <motion.li key={idx}
+                  initial={{ y: -250, opacity: 0 }}
+                  animate={{y: 0, opacity: 1}}
+                  transition={{delay: 0.3, duration: 0.3, type: 'tween'}}
+                >
               <Link to={item.url} className={item.cName}>
                       {item.title}
                       <small>{item.desc}</small>
@@ -45,7 +44,7 @@ const Nav = () => {
             </motion.li>
           );
         })}
-      </ul>
+      </motion.ul>
             </div>
 
      );

@@ -94,9 +94,9 @@
         width: 1.8rem;
         fill:  #323720;
     }
-    &:hover {
+   /*  &:hover {
         fill: white;
-    }
+    } */
 }
   
   .menu-icon {
@@ -108,6 +108,7 @@
     .nav {
       margin: 0;
       padding: 0;
+      transition: all 0.6s ease-out;
     }
   
     .nav-menu {
@@ -120,7 +121,7 @@
       top: 8vh;
       left: -110%;
       opacity: 0;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.5s ease-in-out;
       overflow-x: hidden;
       
     }
@@ -133,7 +134,7 @@
           );
       left: 0;
       opacity: 1;
-      transition: all 0.6s ease-in-out;
+      
       z-index: 50;
       display: flex;
       align-items: center;
@@ -155,6 +156,7 @@
     .nav-links {
         position: relative;
         width: 80%; 
+        transition: all 0.6s ease;
     }
   
     .menu-icon {

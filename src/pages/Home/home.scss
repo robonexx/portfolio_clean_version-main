@@ -36,9 +36,7 @@
     }
 
     h1 {
-        /* position: absolute;
-        left: 15%;
-        bottom: -15%; */
+       
         font-size: 3rem;
         color: #f3b358;
         text-transform: uppercase;
@@ -47,11 +45,6 @@
 
         @media (max-width: 960px) {
             font-size: 2rem;
-        }
-
-        &:hover {
-            transform: scale(1.02);
-            color: #f3be58;
         }
     }
 }
