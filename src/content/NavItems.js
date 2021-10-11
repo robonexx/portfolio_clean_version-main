@@ -1,7 +1,7 @@
 const navItems = [
     {
         title: "Home",
-        desc: "where we sleep... Zzz",
+        desc: "Welcome",
       url: "/",
       cName: "nav-links"
     },
@@ -13,13 +13,13 @@ const navItems = [
     },
     {
         title: "Projects",
-        desc: "What I been up to",
+        desc: "Take a look",
       url: "/projects",
       cName: "nav-links"
     },
     {
         title: "Contact",
-        desc: "Where You can find me",
+        desc: "Where to find me",
       url: "/contact",
       cName: "nav-links"
     }

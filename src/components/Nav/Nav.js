@@ -4,26 +4,14 @@ import navItems from '../../content/NavItems'
 import Logo from '../logo/Logo'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import './nav.scss'
-import { MenuButton } from '../menubutton/MenuBtn'
 
 
 
 const Nav = () => {
     const [active, setActive] = useState(false)
-    const [rotate, setRotate] = useState('')
-    const [isOpen, setOpen] = useState(false);
+   
 
-  const canvasStyle = {
-    display: "flex",
-    width: "100vw",
-    height: "100vh",
-    alignItems: "center",
-    justifyContent: "center"
-  };
 
-  const menuButtonStyle = {
-    marginLeft: "2rem"
-  };
 
     const handleClick = () => {
         setActive(!active)
@@ -32,13 +20,6 @@ const Nav = () => {
     return (
         
         <div className="nav">
-             {/* <div style={canvasStyle}>
-      <MenuButton
-        isOpen={isOpen}
-        onClick={() => setOpen(!isOpen)}
-        style={menuButtonStyle}
-                />
-        </div> */}
             <Logo className="logo"/>
             <div className="menu-icon" onClick={handleClick}>
         {active ? <HiX className="hix"/> : <HiMenuAlt3 className="menu3"/>}

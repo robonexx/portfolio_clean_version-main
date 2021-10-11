@@ -24,35 +24,34 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
   }
   li {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
     align-items: center;
-    grid-gap: 1.2rem;
-    padding: 1rem;
+    margin: 0 1.2rem;
+    
 
     &::after {
         border-right: solid 15px transparent;
-         border-left: solid  15px #323720;
+         border-left: solid  15px #fff;
         border-top: solid transparent 15px;
         border-bottom: solid transparent 15px;
-        transform: translateX(-30%) translateY(-25%);
+        transform: translateX(-20%) translateY(-25%);
         position: absolute;
         z-index: 1;
         content: "";
         display: block;
+        opacity: 0.3;
+        transition: all 0.3s ease-in-out;
   }
   .nav-links {
-
-        padding: 0.5rem 1rem;
-        font-size: 1.4rem;
+        padding: 1.7rem 1rem;
+        font-size: 1.2rem;
         font-family: 'Inter', sans-serif;
         text-decoration: none;
-        line-height: 1;
         color: #FCFCFB;
         transition: all 0.3s ease-in-out;
 
@@ -64,6 +63,7 @@
             text-align: right;
             color: #323720;
             transition: all 0.3s ease-in-out;
+            opacity: 0;
         }
   }
   
@@ -76,15 +76,17 @@
       }
       small {
           color: #Fff;
+          opacity: 1;
       }
       &::after {
-          border-left: solid 15px #f3bd58da;
+          border-left: solid 15px #f3c56f;
+          opacity: 1;
       }
   }
 }
 .logo {
     margin: 0 0 0 3vw;
-    width: 3rem;
+    width: 2.5rem;
     transition: all 0.3s ease;
 
     @media (max-width: 960px) {
@@ -133,11 +135,13 @@
       opacity: 1;
       transition: all 0.6s ease-in-out;
       z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     
 
       li {
         position: relative;
-        margin: 2rem 0;
         width: 45%;
 
         small {
@@ -149,7 +153,7 @@
     
 
     .nav-links {
-        position: absolute;
+        position: relative;
         width: 80%; 
     }
   
