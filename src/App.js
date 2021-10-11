@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
 
   return (
-    <Router>
+    <div>
       <Nav />
       <SideBar />
       <Mail />
@@ -26,7 +26,7 @@ function App() {
                       <Route path="/dancer" component={Dancer}/>
                       <Route path="/contact" component={Contact}/>
                   </Switch>
-    </Router>
+    </div>
   );
 }
 

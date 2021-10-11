@@ -1,32 +1,31 @@
 import React from 'react'
-import Logo from '../../components/logo/Logo';
 import './home.scss'
-import PortImg from '../../assets/img/rob1.png'
-import ShapeOne from '../../components/design/shapes/ShapeOne';
-import ShapeTwo from '../../components/design/shapes/ShapeTwo';
+import {motion} from 'framer-motion'
 
 
 
 const Home = () => {
+
+
   return (
     <div className="home-wrapper">
       <div className="headline-wrapper">
-        <h4>Hello, my name is </h4>
-       <h1>Robert Wägar</h1>
+        <motion.h4
+          initial={{x: -200, opacity: 0}}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{delay: 0.4, duration: 0.3}}
+        >Hello, my name is </motion.h4>
+        <motion.h1
+          initial={{x: -400, opacity: 0}}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{delay: 0.3, duration: 0.3}}
+        >Robert Wägar</motion.h1>
       </div>
-
-      {/* <img src={PortImg} alt=""
-        className="image" />
-      <div className="shapes">
-        <div>
-        <ShapeOne />
-        </div>
-        <div>
-        <ShapeTwo />
-        </div>        
-      </div> */}
      
-      <section className="home-section-top">
+      <motion.section className="home-section-top"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      transition={{delay: 1, duration: 2}}>
         <h2>
           I´m a <b>developer</b> with focus on 
           <b> frontend / </b> <small> backend</small> & <b>design</b><br />
@@ -34,7 +33,7 @@ const Home = () => {
           I´m currently Based in Stockholm, Sweden <br /><br/>
           I´m a freelancer here to help you if you are looking for a developer or need help with building your website or other web based applications
         </h2>
-      </section>
+      </motion.section>
   
       <section className="home-section-mid">
         <h2>
