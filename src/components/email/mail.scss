@@ -1,7 +1,7 @@
 .mail {
   box-sizing: border-box;
     position: fixed;
-    right: 1vw;
+    right: 0vw;
     top: 60vh;
     height: 42px;
     z-index: 50;
@@ -16,7 +16,7 @@
     z-index: 99;
     transition: all .3s ease-in-out 0s;
     filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
-    margin: 1rem 1.5rem;
+    margin: 0.5rem 1rem;
 
     @media (max-width: 768px) {
       display: none;
@@ -28,7 +28,7 @@
     margin: 0 auto;
     font-weight: 100;
     font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -36,7 +36,7 @@
   }
   
   .mail .mail-info .mail-item {
-    margin: 1rem 1.5rem;
+    margin: 0.5rem 0rem;
   }
   
   .mail .mail-info .mail-icon {

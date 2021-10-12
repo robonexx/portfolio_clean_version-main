@@ -1,16 +1,102 @@
 .about {
     position: relative;
-    margin-top: 8vh;
-    width: 100vw;
-    height: 92vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    h1 {
-        font-size: 4rem;
-        color: #FCFCFB;
-        margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.about-headline {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    top: 30vh;
+    left: 10vw;
+    z-index: 10;
+
+    @media (max-width: 960px) {
+        left: 1rem;
+        padding: 0 1rem;
+        width: 80%;
+        left: 0;
+        top: 20vh;
     }
+
+    small {
+        font-size: 1rem;
+        color: #fcfcfb;
+        font-weight: 100;
+
+        @media (max-width: 960px) {
+            font-size: 1em;
+        }
+    }
+
+    h1 {
+       
+        font-size: 3rem;
+        color: #fcfcfb;
+        text-transform: uppercase;
+        transition: transform 1s ease;
+        font-family: 'Playfair Display', sans-serif;
+        cursor: pointer;
+
+        @media (max-width: 960px) {
+            font-size: 2rem;
+        }
+    }
+}
+.about-section {
+    position: relative;
+    top: 40vh;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    height: 92vh;
+    color: #f3c56f;
+
+    @media (max-width: 960px) {
+        top: 30vh;
+        padding: 0 2rem;
+        width: 80%;
+        left: 0;
+        margin: 0 auto;
+        
+    }
+    
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 100;
+
+        @media (max-width: 960px) {
+            font-size: 1.2rem;
+        }
+
+        b {
+            font-size: 2rem;
+            color: #fcfcfb;
+            @media (max-width: 960px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        small {
+            unicode-bidi:bidi-override;
+            direction:rtl;
+            font-size: 2rem;
+            font-weight: 800;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+            color: #fcfcfb;
+            @media (max-width: 960px) {
+                font-size: 1.6rem;
+            }
+        }
+        
+    }
+    
+
 }
