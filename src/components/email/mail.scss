@@ -1,6 +1,7 @@
 .mail {
+  box-sizing: border-box;
     position: fixed;
-    right: 2vw;
+    right: 1vw;
     top: 60vh;
     height: 42px;
     z-index: 50;
@@ -13,9 +14,9 @@
     flex-direction: column;
     color: #fff;
     z-index: 99;
-    height: fit-content;
     transition: all .3s ease-in-out 0s;
     filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.6));
+    margin: 1rem 1.5rem;
 
     @media (max-width: 768px) {
       display: none;
@@ -24,10 +25,10 @@
 
   .mail-text {
     writing-mode: vertical-lr;
-    margin: 0.5rem auto;
+    margin: 0 auto;
     font-weight: 100;
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -35,7 +36,7 @@
   }
   
   .mail .mail-info .mail-item {
-    margin: 0rem 1.5rem;
+    margin: 1rem 1.5rem;
   }
   
   .mail .mail-info .mail-icon {
