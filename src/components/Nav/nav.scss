@@ -5,7 +5,7 @@
     background: linear-gradient(
       90deg,
       #f3be58 0%,
-      #1f170c 70%
+      #1e2328 70%
     );
     height: 8vh;
     width: 100vw;
@@ -20,7 +20,7 @@
     position: absolute;
     width: 70%;
     top: 0;
-    right: 0;
+    right: 4rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -63,7 +63,7 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 100;
             text-align: right;
-            color: #1f170c;
+            color: #1e2328;
             transition: all 0.3s ease-in-out;
         }
   }
@@ -131,7 +131,7 @@
         background: linear-gradient(
             90deg,
             #f3be58 0%,
-            #1f170c 70%
+            #1e2328 70%
           );
       left: 0;
       opacity: 1;
