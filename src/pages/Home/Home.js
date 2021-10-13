@@ -54,11 +54,12 @@ const Home = () => {
           I´m working as a <b>dance</b> teacher & workshop / event producer 
           </h2>
       </section>
+
       <section className="home-section-bottom" >
         <h2>
           Lorem ipsum dolor sit amet. <br />
           <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> <br />
-          Lorem ipsum dolor sit. <br />
+          Lorem ipsum dolor sit. <br /><br/>
           <b>Lorem ipsum dolor sit amet.</b> <br /><br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eos!<br/>
           Lorem ipsum dolor sit.<b>Lorem.</b> Lorem ipsum dolor sit amet consectetur.

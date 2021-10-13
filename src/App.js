@@ -11,25 +11,7 @@ import Developer from './pages/Developer/Developer'
 import Contact from './pages/Contact/Contact'
 import { BrowserRouter as Switch, Route } from 'react-router-dom'
 import Loading from './components/loading/Loading'
-/* import { motion } from 'framer-motion'
 
-const loadingVariants = {
-  initial: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.4
-    }
-  },
-  exitOut: {
-    opacity: 0,
-    transition: {
-        duration: 0.4
-    }
-}
-} */
 
 function App() {
 
@@ -44,19 +26,13 @@ function App() {
   return (
     <div>
       {loading ? 
-        <div
-         /*  variants={loadingVariants}
-          initial="hidden"
-          animate="visible" */
-          > 
+        <div>
+         
             <Loading loading={loading} setLoading={setLoading} />
          
           </div>
         :
-        <div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{duration: 0.4}}>
+        <div>
         <Nav />
         <SideBar />
         <Mail />
