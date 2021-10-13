@@ -6,8 +6,35 @@ import MenuItems from '../menuItems/MenuItems'
 import Logo from '../logo/Logo'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import './nav.scss'
+import { nominalTypeHack } from 'prop-types'
 
-
+const logoVariants = {
+  hidden: {
+      opacity: 0,
+      fill: "none",
+      y: -50
+  },
+  visible: {
+    opacity: 1,
+    fill: "#1e2328",
+      y: 0,
+      transition: {
+          type: 'tween',
+          delay: 0.4,
+          duration: 0.5
+      }
+  },
+  hover: {
+    textShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
+    scale: 1.4,
+    stroke: "#fff",
+    strokeWidth: 10,
+    transition: {
+      duration: 0.5,
+        yoyo: Infinity
+    }
+  }
+}
 
 const Nav = ({idx}) => {
     const [active, setActive] = useState(false)
@@ -19,13 +46,18 @@ const Nav = ({idx}) => {
     return (
         
       <div className="nav">
+        <Link to="/">
         <motion.div
-            initial={{ x: -300, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.3, type: 'spring', stiffness: 300 }}
+          variants={logoVariants}
+            initial="hidden"
+          animate="visible"
+          whileHover="hover"
+          /* transition={{ delay: 0.1, duration: 0.3, type: 'spring', stiffness: 300 }} */
         >
             <Logo className="logo" />
-          </motion.div>
+        </motion.div>
+        </Link>
+        
         <motion.div className="menu-icon" onClick={handleClick}
         initial={{ y: -250, opacity: 0 }}
         animate={{y: 0, opacity: 1}}

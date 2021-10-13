@@ -1,6 +1,39 @@
-.logo {
+/* .logo {
     stroke:  #323720;
    stroke-width: 4px;
    fill: none;
-   
+   animation-delay: 3s;
+   animation: logoFill 2s ease forwards;
 }
+
+
+.logo path {
+    stroke-dasharray: 800px;
+    stroke-dashoffset: 800px;
+    animation-delay: 3s;
+    animation: logo-path 2s ease forwards;
+}
+
+@keyframes logo-path {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes logoFill {
+
+    from {
+        fill: none;
+        visibility: hidden;
+    }
+    to {
+        fill:#1e2328;
+        
+    }
+}
+ */

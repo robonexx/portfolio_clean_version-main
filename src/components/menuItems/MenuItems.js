@@ -16,6 +16,12 @@ const itemVariants = {
             delay: 0.4,
             duration: 0.3
         }
+    },
+    hover: {
+        rotate: -5,
+        x: 0,
+        y: 0,
+        scale: 1.01,
     }
 }
 
@@ -30,6 +36,7 @@ const MenuItems = () => {
                       variants={itemVariants}
                       initial="hidden"
                       animate="visible"
+                      whileHover="hover"
                 >
               <Link to={item.url} className={item.cName}>
                       {item.title}

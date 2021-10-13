@@ -51,11 +51,11 @@
   .nav-links {
         padding: 1.7rem 1rem;
         font-size: 1.4rem;
-        font-family: 'Inter', sans-serif;
+        /* font-family: 'Inter', sans-serif; */
         font-family: 'Playfair Display', sans-serif;
         text-decoration: none;
         color: #f3be58;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         small {
             font-size: .7rem;
@@ -71,17 +71,19 @@
   &:hover,
   &:focus {
       a {
-  transform: scale(1.05);
-  color: #E3DCCC;
-
-      }
+        color: #fff;
+          }
       small {
-          color: #Fff;
+          color: #f3be58;
           opacity: 1;
       }
       &::after {
-          border-left: solid 15px #f3c56f;
-          opacity: 1;
+         /*  border-left: solid 15px #f3c56f; */
+         border-top: solid 15px #f3c56f;
+         border-right: solid 15px transparent;
+         border-left: solid  15px transparent;
+        border-bottom: solid transparent 15px;
+        opacity: 1;
       }
   }
 }
@@ -93,7 +95,7 @@
     @media (max-width: 960px) {
         margin: 0.5rem 0 0 1.5rem;
         width: 1.8rem;
-        fill:  #323720;
+        fill:  #1e2328;
     }
    /*  &:hover {
         fill: white;
@@ -144,16 +146,18 @@
 
       li {
         position: relative;
-        width: 45%;
+        width: 65%;
 
         .nav-links {
           position: relative;
           width: 80%; 
           transition: all 0.6s ease;
           color: #1f170c;
+          font-size: 1.8rem;
+          font-weight: 800;
 
           &:hover {
-            color: #FCFCFB;
+            color: #fff;
 
             &::after {
               border-left: solid 15px #1f170c;

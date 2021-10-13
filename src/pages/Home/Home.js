@@ -35,19 +35,20 @@ const Home = () => {
           My goal is to create smart <br />
           <b>user interfaces & useful interactions</b> <br />
           by developing rich <br />
-          <b>web experiences & web applications</b> <br /><br />
-          When not learning new & playing around with code<br/>
-          I´m working as a <b>dance</b> teacher & workshop / event producer 
+            <b>web experiences & web applications</b> <br /><br />
+            
         </h2>
         </h2>
       </motion.section>
   
       <section className="home-section-mid">
         <h2>
-          I belive that <br/>
+        I belive that <br/>
           <b>Creativity, art, design, and technology</b><br />
           <i>in the hands of the right minds has the tools to solve our future problems.</i>
-           <br />
+          <br />
+          When not learning new & playing around with code<br/>
+          I´m working as a <b>dance</b> teacher & workshop / event producer 
           </h2>
       </section>
       <section className="home-section-bottom" >
