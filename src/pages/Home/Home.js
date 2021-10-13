@@ -8,7 +8,10 @@ const Home = () => {
 
 
   return (
-    <div className="home-wrapper">
+    <motion.div className="home-wrapper"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{duration: 0.3}}>
       <div className="headline-wrapper">
         <motion.h4
           initial={{x: -200, opacity: 0}}
@@ -63,7 +66,7 @@ const Home = () => {
       
       </section>
      
-    </div>
+    </motion.div>
    );
 }
  
