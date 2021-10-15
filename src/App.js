@@ -9,7 +9,7 @@ import Projects from './pages/Projects/Projects'
 import Dancer from './pages/Dancer/Dancer'
 import Developer from './pages/Developer/Developer'
 import Contact from './pages/Contact/Contact'
-import { BrowserRouter as Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Loading from './components/loading/Loading'
 
 

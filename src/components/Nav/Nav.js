@@ -6,18 +6,17 @@ import MenuItems from '../menuItems/MenuItems'
 import Logo from '../logo/Logo'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import './nav.scss'
-import { nominalTypeHack } from 'prop-types'
 
 const logoVariants = {
   hidden: {
       opacity: 0,
       fill: "none",
-      y: -50
+      x: -50
   },
   visible: {
     opacity: 1,
     fill: "#1e2328",
-      y: 0,
+      x: 0,
       transition: {
           type: 'tween',
           delay: 0.4,
@@ -46,7 +45,7 @@ const Nav = ({idx}) => {
     return (
         
       <div className="nav">
-        <Link to="/">
+        
         <motion.div
           variants={logoVariants}
             initial="hidden"
@@ -54,9 +53,11 @@ const Nav = ({idx}) => {
           whileHover="hover"
           /* transition={{ delay: 0.1, duration: 0.3, type: 'spring', stiffness: 300 }} */
         >
+          <Link to="/">
             <Logo className="logo" />
+          </Link>
         </motion.div>
-        </Link>
+        
         
         <motion.div className="menu-icon" onClick={handleClick}
         initial={{ y: -250, opacity: 0 }}
@@ -66,6 +67,9 @@ const Nav = ({idx}) => {
           {active ? <HiX className="hix"/> : <HiMenuAlt3 className="menu3"/>}
         </motion.div>
         <motion.ul className={active ? "nav-menu active" : "nav-menu"}
+          initial={{ x: 250, opacity: 0 }}
+          animate={{x: 0, opacity: 1}}
+          transition={{delay: 0.5, duration: 0.3, type: 'tween'}}
         >
           <MenuItems key={idx} />
             {/* {navItems.map((item, idx) => {

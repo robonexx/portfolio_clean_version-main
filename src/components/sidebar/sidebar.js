@@ -6,8 +6,8 @@ import { FiLinkedin, FiGithub,FiFacebook, FiInstagram } from "react-icons/fi";
 const SideBar = () => {
     return (
         <motion.div className="sidebar"
-            initial={{ y: -1000, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{delay: 1, duration: 0.6}}>
             <div className="social">
                     <a href="https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/" target="_blank"> <FiLinkedin className="soc-item soc-icon" /></a>

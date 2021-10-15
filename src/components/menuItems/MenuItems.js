@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import { motion } from 'framer-motion'
+/* import { motion } from 'framer-motion' */
 import navItems from '../../content/NavContent';
-
+/* 
 const itemVariants = {
     hidden: {
         opacity: 0,
@@ -23,7 +23,7 @@ const itemVariants = {
         y: 0,
         scale: 1.01,
     }
-}
+} */
 
 const MenuItems = () => {
 
@@ -32,17 +32,17 @@ const MenuItems = () => {
         <>
         {navItems.map((item, idx) => {
               return (
-                  <motion.li key={idx}
-                      variants={itemVariants}
+                  <li key={idx}
+                     /*  variants={itemVariants}
                       initial="hidden"
                       animate="visible"
-                      whileHover="hover"
+                      whileHover="hover" */
                 >
               <Link to={item.url} className={item.cName}>
                       {item.title}
                       <small>{item.desc}</small>
               </Link>
-            </motion.li>
+            </li>
           );
         })}
         </>

@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-* {
+$black: #424243;
+$red: #fc3f4e;
+$white: #ffffff;
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #1e2328;
-    /* background-color: #181214; */
+    background-color: #030e1f;
+
+    @media (max-width: 960px) {
+        background-color: #030e1f;       
+    }
+    
 }
+
+/* 
+.no-scroll {
+    overflow: hidden;
+  } */
