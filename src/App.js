@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>
-      {loading ? 
+      { loading ? 
         <div>
          
             <Loading loading={loading} setLoading={setLoading} />
@@ -43,7 +43,7 @@ function App() {
                         <Route path="/developer" component={Developer}/>
                         <Route path="/dancer" component={Dancer}/>
                         <Route path="/contact" component={Contact}/>
-                    </Switch>
+          </Switch>
         </div>
 }
 

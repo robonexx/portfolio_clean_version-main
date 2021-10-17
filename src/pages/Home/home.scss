@@ -12,7 +12,7 @@
 .headline-wrapper {
     position: relative;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     display: block;
     top: 30vh;
     left: 10vw;
@@ -21,21 +21,21 @@
     @media (max-width: 960px) {
         left: 0rem;
         padding: 0 2rem;
-        width: 80%;
+        width: 90%;
         left: 0;
         top: 20vh;
     }
-
     h4 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: #fcfcfb;
-        font-weight: 100;
+        font-weight: 400;
 
         @media (max-width: 960px) {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 
+   
     h1 {
         font-size: 3rem;
         color: #f3b358;
@@ -71,19 +71,19 @@
 .home-section-top {
     position: relative;
     top: 40vh;
-    left: 10vw;
     text-align: left;
-    width: 90%;
+    width: 80%;
+    left: 10vw;
     margin: 0 auto;
     height: 92vh;
-    color: #f3c56f;
     z-index: 2;
 
     @media (max-width: 960px) {
         top: 30vh;
-        padding: 0 2rem;
-        width: 80%;
         left: 0;
+        right: 0;
+        padding: 0 2rem;
+        width: 90%;
         margin: 0 auto;
         text-align: left;
         
@@ -91,19 +91,42 @@
     
 
     h2 {
+        color: #f3c56f;
         margin: 2rem 0;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 100;
+        
         
 
         @media (max-width: 960px) {
             width: 100%;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            
         }
+
+        span {
+            font-size: 1.4rem;
+            color: #fcfcfb;
+            font-weight: 400;
+    
+            @media (max-width: 960px) {
+                font-size: 1.2rem;
+            }
+        }
+    
 
         b {
             font-size: 2rem;
             color: #fcfcfb;
+
+            @media (max-width: 960px) {
+                font-size: 1.2rem;
+            }
+        }
+        .bigger-text {
+            font-size: 2rem;
+            color: #fcfcfb;
+
             @media (max-width: 960px) {
                 font-size: 1.6rem;
             }
@@ -113,11 +136,13 @@
             unicode-bidi:bidi-override;
             direction:rtl;
             font-size: 2rem;
-            font-weight: 800;
+            font-size: 1.4rem;
+            color: #fcfcfb;
+            font-weight: 400;
             text-shadow: 0 1px 2px rgba(0,0,0,0.4);
             color: #fcfcfb;
             @media (max-width: 960px) {
-                font-size: 1.6rem;
+                font-size: 1.2rem;
             }
         }
         
@@ -130,7 +155,7 @@
     position: relative;
     top: 5vh;
     right: 10vw;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: 50vh;
     color: #f3c56f;
@@ -138,8 +163,9 @@
     z-index: 2;
 
     @media (max-width: 960px) {
+        top: 0;
         padding: 0 2rem;
-        width: 80%;
+        width: 90%;
         right: 0;
         left: 0;
         margin: 0 auto;
@@ -149,17 +175,20 @@
     
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 100;
         
 
         @media (max-width: 960px) {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+
         }
 
         b {
             font-size: 2rem;
             color: #fcfcfb;
+            line-height: 1.6rem;
 
             @media (max-width: 960px) {
                 font-size: 1.6rem;
@@ -173,7 +202,7 @@
     top: 10vh;
     left: 10vw;
     right: 10vw;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: 100vh;
     color: #f3c56f;
@@ -183,10 +212,10 @@
 
     @media (max-width: 960px) {
         padding: 0 2rem;
-        width: 80%;
+        width: 90%;
         left: 0;
         right: 0;
-        margin: 20vh auto 10vh;
+        margin: 10vh auto 10vh;
         height: 70vh;
         flex-direction: column;
     }
@@ -201,7 +230,12 @@
         a {
             text-decoration: none;
             color: #fcfcfb;
-            text-underline-offset: 1px;
+            font-size: 1.4rem;
+            color: #fcfcfb;
+            font-weight: 400;
+            @media (max-width: 960px) {
+                font-size: 1.2rem;
+            }
 
             &:hover {
                 color: lightgray;
@@ -210,13 +244,14 @@
 
     h2 {
         width: 80%;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 100;
 
         @media (max-width: 960px) {
-            font-size: 1rem;
-            margin: 5vh auto;
+            font-size: 1.2rem;
+            margin: 2vh auto;
             width: 100%;
+            line-height: 1.4rem;
         }
 
         b {
@@ -234,12 +269,12 @@
         }
 
         h4 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: #fcfcfb;
             font-weight: 100;
     
             @media (max-width: 960px) {
-                font-size: 1em;
+                font-size: 1.2rem;
             }
 
             .technologies {
@@ -249,14 +284,14 @@
                 align-items: center;
 
                 @media (max-width: 960px) {
-                    font-size: 1em;
+                    font-size: 1rem;
                     text-align: left;
                     justify-content: center;
                 }
                 
                 h4 {
                     margin: 1rem 2rem;
-                    font-weight: bolder;
+                    font-weight: 400;
 
                     &:hover {
                         animation: glitch 0.6s ease infinite;
@@ -327,18 +362,18 @@
 
 @keyframes glitch {
     0% {
-            text-shadow: 3px 2px #f44236, -2px -4px lightblue;
+            text-shadow: 3px 2px #f3c56f, -2px -4px lightblue;
     }
     25% {
-            text-shadow: -2px -3px #f44236, 3px 1px lightblue;
+            text-shadow: -2px -3px #f3c56f, 3px 1px lightblue;
     }
     50% {
-            text-shadow: 3px -1px #f44236, -4px 2px lightblue;
+            text-shadow: 3px -1px #f3c56f, -4px 2px lightblue;
     }
     75% {
-            text-shadow: -3px -1px #f44236, -4px -2px lightblue;
+            text-shadow: -3px -1px #f3c56f, -4px -2px lightblue;
     }
     100% {
-            text-shadow: 3px 1px #f44236, 2px 4px lightblue;
+            text-shadow: 3px 1px #f3c56f, 2px 4px lightblue;
     }
 }

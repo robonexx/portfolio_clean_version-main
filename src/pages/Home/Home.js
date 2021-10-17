@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import './home.scss'
 import { motion } from 'framer-motion'
 import Img from '../../assets/img/ruperto.jpg'
+import Footer from '../../components/Footer/Footer'
 
 
 
@@ -33,15 +34,14 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 2 }}>
         <h2>
-          I´m a <b>developer</b> with focus on 
-          <b> frontend / </b> <small> backend</small> & <b>design</b><br />
+          I´m a <span>developer</span> with focus on 
+          <span> frontend / </span> <small> backend</small> & <span>design</span><br />
           <br/><br/>
           My goal is to create smart <br />
-          <b>user interfaces & useful interactions</b> <br />
+          <b className="bigger-text">user interfaces & useful interactions</b> <br />
           by developing rich <br />
-            <b>web experiences & applications</b> <br /><br />
+            <b className="bigger-text">web experiences & applications</b> <br /><br />
         </h2>
-        
       </motion.section>
   
       <section className="home-section-mid">
@@ -96,7 +96,7 @@ const Home = () => {
         </div>
       
       </section>
-     
+     <Footer />
     </motion.div>
    );
 }
