@@ -72,8 +72,9 @@ const Home = () => {
 
       <section className='home-section-bottom'>
         <div className='text-section'>
+
+          <b>About me</b> <br />
           <h2>
-            <b>About me</b> <br />
             <br />
             My name is Robert, I´m a creative mind who loves building things for
             the internet. I started a few years back when I felt that i needed
@@ -97,12 +98,11 @@ const Home = () => {
             <br />
             <br />
           </h2>
-          <h4>
-            <span>Here are the technologies I worked with so far:</span> <br />
-            <br />
-          </h4>
 
           <div className='technologies'>
+            <span>Here are the technologies I worked with so far:</span>
+            <br />
+            <br />
             <h4>Javascript</h4>
             <h4>React</h4>
             <h4>Node.js</h4>
@@ -118,7 +118,7 @@ const Home = () => {
           <h2>
             So why did I write so far? Cause the knowledge and learning is
             endless & my goal is to keep learning as I go and work with
-            different projects
+            different projects <br/>
             <Link to='/about'>Read more about me...</Link>
           </h2>
         </div>
