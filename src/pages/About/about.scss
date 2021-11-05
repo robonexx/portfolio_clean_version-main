@@ -3,8 +3,11 @@
     width: 100vw;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-self: center;
+    color: var(--color-text);
+    padding: 1vh 20vw;
    
 
     h1 {

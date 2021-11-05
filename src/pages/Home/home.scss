@@ -1,11 +1,10 @@
 .home-wrapper {
     position: relative;
-    width: 100%;
-    min-height: 100vh;
+    width: 100vw;
     height: 100%;
     background-color: transparent;
     font-family: 'Inter', sans-serif;
-  /*   overflow-x: hidden; */
+    overflow: hidden;
 
 }
 
@@ -27,7 +26,7 @@
     }
     h4 {
         font-size: 1.4rem;
-        color: #fcfcfb;
+        color: var(--color-text);
         font-weight: 400;
 
         @media (max-width: 960px) {
@@ -38,27 +37,61 @@
    
     h1 {
         font-size: 3rem;
-        color: #f3b358;
+        color: var(--color-text-2nd);
         text-transform: uppercase;
         transition: transform 1s ease;
         font-family: 'Playfair Display', sans-serif;
         cursor: pointer;
-/* 
+        overflow: hidden;
+
         &::after {
             content: "/ˌkriːeɪˈtɪvəti/";
             display: block;
             position: absolute;
             top: -25vh;
-            left: 10vw;
+            left: 5vw;
             width: 200%;
-            color: #080f18;
-            filter: drop-shadow(2px 2px rgba(0,0,0,0.3));
+            color: #282828;
+            text-shadow: 4px 4px 3px #000, 4px 4px 10px #121212;
             font-size: 10rem;
+            font-weight: 800;
             z-index: -1;
             @media (max-width: 960px) {
-                visibility: hidden;
+                content: "<div>";
+                font-family: 'Great Vibes', cursive;
+                display: block;
+                font-style: oblique;
+                text-transform: lowercase; 
+                position: absolute;
+                top: -10vh;
+                left: -5vw;
+                width: 200%;
+                color: #2A497F;
+                text-shadow: 2px 2px 3px #152852, 4px 4px 10px #152852;
+                font-size: 6rem;
+                font-weight: 800;
+                z-index: -1;
             }
-        } */
+        }
+        &::before {
+            display: none;
+            @media (max-width: 960px) {
+                content: "</div>";
+                font-family: 'Great Vibes', cursive;
+                font-style: oblique;
+                text-transform: lowercase;
+                display: block;
+                position: absolute;
+                top: 50vh;
+                left: 30vw;
+                width: 200%;
+                color: #2A497F;
+                text-shadow: 2px 2px 3px #152852, 4px 4px 10px #152852;
+                font-size: 6rem;
+                font-weight: 800;
+                z-index: -1;
+            }
+        }
 
         @media (max-width: 960px) {
             font-size: 2rem;
@@ -77,6 +110,7 @@
     margin: 0 auto;
     height: 92vh;
     z-index: 2;
+    overflow-x: hidden;
 
     @media (max-width: 960px) {
         top: 30vh;
@@ -91,7 +125,7 @@
     
 
     h2 {
-        color: #f3c56f;
+        color: var(--color-text-2nd);
         margin: 2rem 0;
         font-size: 1.4rem;
         font-weight: 100;
@@ -106,7 +140,7 @@
 
         span {
             font-size: 1.4rem;
-            color: #fcfcfb;
+            color: var(--color-text);
             font-weight: 400;
     
             @media (max-width: 960px) {

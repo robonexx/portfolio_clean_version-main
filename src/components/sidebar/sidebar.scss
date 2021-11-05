@@ -2,9 +2,10 @@
     position: fixed;
     left: 0vw;
     top: 60vh;
-    width: 42px;
+    width: 46px;
     z-index: 50;
     display: flex;
+    overflow: hidden;
     
     @media (max-width: 768px) {
         visibility: hidden;

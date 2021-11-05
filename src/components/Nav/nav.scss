@@ -4,11 +4,11 @@
     left: 0;
     background: linear-gradient(
       90deg,
-      #CEAE65 0%,
-      #1C335F 70%
+      var(--color-text-2nd) 0%,
+      var(--color-bg) 70%
     );
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -51,10 +51,9 @@
   .nav-links {
         padding: 1.7rem 1rem;
         font-size: 1.4rem;
-        /* font-family: 'Inter', sans-serif; */
         font-family: 'Playfair Display', sans-serif;
         text-decoration: none;
-        color: #f3be58;
+        color: var(--color-text-2nd);
         transition: all 0.5s ease-in-out;
 
         small {
@@ -63,7 +62,7 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: 100;
             text-align: right;
-            color: #1C335F;
+            color: var(--color-text-dark);
             transition: all 0.5s ease-in-out;
         }
   }
@@ -74,12 +73,12 @@
         color: #fff;
           }
       small {
-          color: #f3be58;
+          color: var(--color-text-2nd);
           opacity: 1;
       }
       &::after {
          /*  border-left: solid 15px #f3c56f; */
-         border-top: solid 15px #f3c56f;
+         border-top: solid 15px var(--color-text-2nd);
          border-right: solid 15px transparent;
          border-left: solid  15px transparent;
         border-bottom: solid transparent 15px;
