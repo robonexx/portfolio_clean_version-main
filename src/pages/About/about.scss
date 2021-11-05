@@ -11,9 +11,10 @@
    
 
     h1 {
-        margin: 10vh auto;
+        margin: 20vh auto 5vh;
+        font-family: 'Inter';
         text-align: center;
-        font-size: 3rem;
+        font-size: 8rem;
         color: white;
 
         &:hover {
@@ -21,7 +22,40 @@
         }
     }
 
+    ul {
+            width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        li {
+                font-family: 'Inter';
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                padding: 0.25rem;
+        }
+    }
+
 }
+
+.model {
+        position: relative;
+        width: fit-content;
+        overflow: hidden;
+        text-transform: uppercase;
+        .first {
+          margin-right: 2rem;
+        }
+        span {
+          display: inline-block;
+          position: relative;
+          font-weight: 800;
+          font-size: 8rem;
+          font-family: "Inter";
+          @media (max-width: 1440px) {
+            font-size: 4.5rem;
+          }
+        }
+      }
 @keyframes glitch {
     0% {
             text-shadow: 3px 2px #f44236, -2px -4px lightblue;
@@ -39,3 +73,5 @@
             text-shadow: 3px 1px #f44236, 2px 4px lightblue;
     }
 }
+
+

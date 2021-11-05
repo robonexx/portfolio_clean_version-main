@@ -13,6 +13,7 @@ const Home = () => {
       exit={{ opacity: 0, scaleX: 0 }}
       transition={{ duration: 0.6 }}
     >
+     
       <div className='headline-wrapper'>
         <motion.h4
           initial={{ x: -200, opacity: 0 }}
@@ -25,9 +26,28 @@ const Home = () => {
           initial={{ x: -400, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.3 }}
+          className="rjw"
         >
           Robert Wägar
         </motion.h1>
+      </div>
+      <div className="artsy">
+        <div className="waves">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
       </div>
 
       <motion.section
