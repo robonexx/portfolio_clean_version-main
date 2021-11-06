@@ -11,42 +11,41 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scaleX: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{delay: 0.3, duration: 1, staggerChildren: 0.6 }}
     >
-     
       <div className='headline-wrapper'>
         <motion.h4
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.3 }}
+          transition={{ delay: 0.3, duration:1 }}
         >
           Hello, my name is{' '}
         </motion.h4>
         <motion.h1
           initial={{ x: -400, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.3 }}
-          className="rjw"
+          transition={{ delay: 0.3, duration: 1 }}
+          className='rjw'
         >
           Robert Wägar
         </motion.h1>
       </div>
-      <div className="artsy">
-        <div className="waves">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className='artsy'>
+        <div className='waves'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
 
@@ -54,7 +53,7 @@ const Home = () => {
         className='home-section-top'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 2 }}
+        transition={{ delay: 2, duration: 2 }}
       >
         <h2>
           I´m a <span>developer</span> with focus on
@@ -92,7 +91,6 @@ const Home = () => {
 
       <section className='home-section-bottom'>
         <div className='text-section'>
-
           <b>About me</b> <br />
           <h2>
             <br />
@@ -118,7 +116,6 @@ const Home = () => {
             <br />
             <br />
           </h2>
-
           <div className='technologies'>
             <span>Here are the technologies I worked with so far:</span>
             <br />
@@ -132,13 +129,12 @@ const Home = () => {
             <h4>Figma</h4>
             <h4>HTML/Css</h4>
           </div>
-
           <br />
           <br />
           <h2>
             So why did I write so far? Cause the knowledge and learning is
             endless & my goal is to keep learning as I go and work with
-            different projects <br/>
+            different projects <br />
             <Link to='/about'>Read more about me...</Link>
           </h2>
         </div>

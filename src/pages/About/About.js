@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.scss';
 import { motion } from 'framer-motion';
+import Img from '../../assets/img/originalCopy.png';
 
 const transition = { duration: 2.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -76,6 +77,17 @@ const About = () => {
       exit={{ opacity: 0, scaleY: 0 }}
       transition={{ duration: 0.6 }} */
     >
+      <motion.img
+        src={Img}
+        alt='rob'
+        className='about-img'
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ delay: 0.6, duration: 2 }}
+      />
+      <div className='about-overlay'></div>
       <motion.div
         className='model'
         initial='initial'
@@ -109,7 +121,7 @@ const About = () => {
         }}
         className='details'
       >
-        <div className='contact'>Contact: robertwagar@gmail.com</div>
+        <div className='contact'>Contact robertwagar@gmail.com</div>
       </motion.div>
 
       <motion.div
@@ -117,6 +129,7 @@ const About = () => {
         animate={{ opacity: 1, scaleY: 1 }}
         exit={{ opacity: 0, scaleY: 0 }}
         transition={{ duration: 0.6 }}
+        className='about-text'
       >
         <h1>ABOUT</h1>
         <p>
@@ -141,7 +154,7 @@ const About = () => {
           Molestiae, blanditiis dolorum? Corporis, libero rerum?
         </p>
       </motion.div>
-      <motion.ul>
+      {/*  <motion.ul>
         {items.map(({ text, id }, i) => (
           <motion.li
             key={id}
@@ -153,7 +166,7 @@ const About = () => {
             {text}
           </motion.li>
         ))}
-      </motion.ul>
+      </motion.ul> */}
     </motion.div>
   );
 };
