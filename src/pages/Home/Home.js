@@ -11,7 +11,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scaleX: 0 }}
-      transition={{ delay: 0.3, duration: 1, staggerChildren: 0.6 }}
+      transition={{ delay: 0.3, duration: 1 }}
     >
       <div className='headline-wrapper'>
         <motion.h4
@@ -22,9 +22,9 @@ const Home = () => {
           Hello, my name is{' '}
         </motion.h4>
         <motion.h1
-          initial={{ x: -400, opacity: 0 }}
+          initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
+          transition={{ duration: 1, staggerChildren: 0.6 }}
           className='rjw'
         >
           Robert Wägar

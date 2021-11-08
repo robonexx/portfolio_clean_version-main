@@ -1,77 +1,101 @@
-# restarted with my portfolio again
-Im tyring out different things and really dont know  where i will end up with this one
-As long as I learn new things and explore, this can change in any direction
+# __My Portfolio 2021__
 
-Feel free to check out the progress at robportfolioideas.surge.sh
+## Working on a new portfolio
+</br>
+I think i restarted this project 100 times, feels like it </br>
+So now i decided to continue and build up 2 pages 
+One will be done in react and the other part in either vanilla js, scss and html or wordpress and php
+</br>
+
+---
+
+## The idea
+</br>
+So Im a Dancer and now Developer and want my page to have the option to choose which page to visit
+</br>
+
+---
+
+</br>
+
+#  __Description:__
+
+This project is an school assignment at KYH Stockholm frontend education. 
+The goal was to create a prototype (mvp) in groups and then implement the UX design as a solo project.
+You could choose which ever way you wanted to implement the design, with or without a frameworks.
 
 
-# Getting Started with Create React App
+</br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
+</br>
 
-In the project directory, you can run:
+# __Languages and Tools:__
+[<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />][vscode]
+[<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />][react-js]
+[<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />][html]
+[<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />][css]
+[<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />][javascript]
+</br>
 
-### `npm start`
+- [react-router-dom] 
+- [framer-motion]
+- ☕
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+</br>
 
-### `npm test`
+##  __Preview__
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<img src="" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="" alt="Project image" width="150"> &nbsp; &nbsp;
+<img src="" alt="Project image" width="150"> &nbsp; &nbsp;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</br>
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## __My Socials__
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Github - [robonexx](https://github.com/robonexx)
+- Instagram - [r.o.b_o.n.e](https://www.instagram.com/r.o.b_o.n.e/)
+- Linkedin - [Robert Wägar](https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/)
+- Portfolio - "In the works" [Portfolio](https://robportfolioideas.surge.sh/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+</br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+--- 
+</br>
 
-## Learn More
+## __Email__
+- robertwagar@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+</br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+[vscode]: https://code.visualstudio.com/
+[react-js]: https://reactjs.org/ 
+[javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[react-router-dom]: https://reactrouter.com/web/guides/quick-start
+[framer-motion]: https://www.framer.com/motion/
+[html]: https://www.w3schools.com/html/
+[css]: https://www.w3.org/Style/CSS/Overview.en.html
+[styled-components]: https://styled-components.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

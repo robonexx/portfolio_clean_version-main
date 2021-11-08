@@ -89,7 +89,7 @@ const About = () => {
       />
       <div className='about-overlay'></div>
       <motion.div
-        className='model'
+        className='text-animation'
         initial='initial'
         animate='animate'
         exit='exit'
