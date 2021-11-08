@@ -4,7 +4,7 @@
   --left-bg-color: rgba(19, 19, 61, 0.7);
   --right-bg-color: rgba(58, 48, 41, 0.6);
   --left-btn-hover: rgba(19, 19, 61, 1);
-  --right-btn-hover:  rgb(41, 35, 5);
+  --right-btn-hover:  #ec4d37;
 
   --hover-width: 80%;
   --hover-other-width: 20%;
@@ -99,7 +99,7 @@
 
 .split.left {
   left: 0;
-  background: url("../../assets/code.jpg");
+  background: url("../../assets/code.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +130,7 @@
 
 .split.right {
   right: 0;
-  background: url("../../assets/robertwagar.jpg");
+  background: url("../../assets/robertwagar.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
