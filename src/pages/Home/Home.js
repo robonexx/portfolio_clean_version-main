@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './home.scss';
 import { motion } from 'framer-motion';
 import Img from '../../assets/img/ruperto.jpg';
-/* import Nav from '../../components/Nav/Nav'; */
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       exit={{ opacity: 0, scaleX: 0 }}
       transition={{ delay: 0.3, duration: 1, staggerChildren: 0.6 }}
     >
-      {/* <Nav /> */}
       <div className='headline-wrapper'>
         <motion.h4
           initial={{ x: -200, opacity: 0 }}
@@ -148,7 +146,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/*  <Footer /> */}
     </motion.div>
   );
 };

@@ -2,7 +2,7 @@ const navItems = [
     {
         title: "Home",
         desc: "Welcome",
-      url: "/",
+      url: "/home",
       cName: "nav-links"
     },
     {

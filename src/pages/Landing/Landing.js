@@ -1,20 +1,6 @@
 import React, { useState } from 'react';
 import './Landing.scss';
 import { Link } from 'react-router-dom';
-/* import ImgDance from '../../assets/robertwagar.jpg';
-import ImgDev from '../../assets/code.jpg'; */
-
-/* 
-const left = document.querySelector('.left')
-const right = document.querySelector('.right')
-const container = document.querySelector('.container')
-
-left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
-left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
-
-right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
-right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
- */
 
 const Landing = () => {
   const [conLeft, setConLeft] = useState(false);
@@ -47,7 +33,7 @@ const Landing = () => {
         >
           {/* <img src={ImgDev} alt='' /> */}
           <h1>Developer</h1>
-          <Link to='home' className='btn'>
+          <Link to='/home' className='btn'>
             Enter
           </Link>
         </div>
@@ -58,7 +44,7 @@ const Landing = () => {
         >
           {/* <img src={ImgDance} alt='' /> */}
           <h1>Dancer</h1>
-          <Link to='home' className='btn'>
+          <Link to='/home' className='btn'>
             Enter
           </Link>
         </div>

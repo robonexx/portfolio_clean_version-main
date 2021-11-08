@@ -5,8 +5,6 @@ import SideBar from './components/sidebar/sidebar';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
-import Dancer from './pages/Dancer/Dancer';
-import Developer from './pages/Developer/Developer';
 import Contact from './pages/Contact/Contact';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import Loading from './components/loading/Loading';
@@ -39,8 +37,6 @@ function App() {
               <Route exact path='/home' component={Home} />
               <Route path='/about' component={About} />
               <Route path='/projects' component={Projects} />
-              <Route path='/developer' component={Developer} />
-              <Route path='/dancer' component={Dancer} />
               <Route path='/contact' component={Contact} />
             </Switch>
           </AnimatePresence>
