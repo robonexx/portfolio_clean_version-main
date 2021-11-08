@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Nav from './components/Nav/Nav';
-import SideBar from './components/sidebar/sidebar';
+import Landing from './pages/Landing/Landing';
+/* import Nav from './components/Nav/Nav';
+import SideBar from './components/sidebar/sidebar'; */
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
@@ -30,11 +31,13 @@ function App() {
         </div>
       ) : (
         <div>
-          <Nav />
-          <SideBar />
+          {/* <Nav />
+          <SideBar /> */}
           <AnimatePresence exitBeforeEnter initial={false}>
-            <Switch location={location} key={location.pathname}>
-              <Route exact path='/' component={Home} />
+              <Switch location={location} key={location.pathname}>
+              <Route exact path='/' component={Landing} />
+              <Route exact path='/homeDance' component={Home} />
+              <Route exact path='/homeDev' component={Home} />
               <Route path='/about' component={About} />
               <Route path='/projects' component={Projects} />
               <Route path='/developer' component={Developer} />

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --left-bg-color: rgba(19, 19, 61, 0.7);
+  --right-bg-color: rgba(58, 48, 41, 0.6);
+  --left-btn-hover: rgba(19, 19, 61, 1);
+  --right-btn-hover:  rgb(41, 35, 5);
+
+  --hover-width: 80%;
+  --hover-other-width: 20%;
+
+  --speed: 1500ms;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing {
+  font-family: 'Poppins', sans-serif;
+  background: #07111b;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  background: rgb(35, 35, 35);
+  filter: drop-shadow(0px 0px 1px white);
+  transition: all 0.3s ease;
+}
+
+.right h1 {
+  position: absolute;
+  font-size: 4rem;
+  color: #e2e2e2;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  filter: drop-shadow(2px 2px 2px black);
+
+  @media screen and (max-width: 40em) {
+   font-size: 1.4rem;
+  }
+}
+.left h1 {
+  position: absolute;
+  font-size: 4rem;
+  color: #e2e2e2;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  filter: drop-shadow(2px 2px 2px black);
+
+  @media screen and (max-width: 40em) {
+    font-size: 1.4rem;
+   }
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  border: 0.1rem solid white;
+  padding: .8rem 2rem;
+  filter: drop-shadow(2px 2px 2px black);
+  @media screen and (max-width: 40em) {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+   }
+}
+
+.split.left .btn:hover {
+  background-color: var(--left-btn-hover);
+  border-color: var(--left-btn-hover);
+}
+.split.right .btn:hover {
+  background-color: var(--right-btn-hover);
+  border-color: var(--right-btn-hover);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("../../assets/code.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(57, 51, 59);
+  background-blend-mode: screen;
+}
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+ 
+}
+.hover-left .right {
+  width: var(--hover-other-width);
+}
+.hover-right .right {
+  width: var(--hover-width);
+}
+.hover-right .left {
+  width: var(--hover-other-width);
+}
+
+.split.right {
+  right: 0;
+  background: url("../../assets/robertwagar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(52, 58, 57, 0.24);
+  background-blend-mode: screen;
+}
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.split.left, .split.right, .split.left::before, .split.right::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    transform: scale(0.7), translateX(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    transform: scale(0.8);
+  }
+}

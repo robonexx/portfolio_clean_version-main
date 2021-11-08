@@ -1,26 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './home.scss';
+import './HomeDance.scss';
 import { motion } from 'framer-motion';
 import Img from '../../assets/img/ruperto.jpg';
-import Nav from '../../components/Nav/Nav'
 
-
-const Home = () => {
+const HomeDance = () => {
   return (
     <motion.div
-      className='home-wrapper'
+      className='HomeDance-wrapper'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scaleX: 0 }}
-      transition={{delay: 0.3, duration: 1, staggerChildren: 0.6 }}
+      transition={{ delay: 0.3, duration: 1, staggerChildren: 0.6 }}
     >
-      <Nav/>
       <div className='headline-wrapper'>
         <motion.h4
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration:1 }}
+          transition={{ delay: 0.3, duration: 1 }}
         >
           Hello, my name is{' '}
         </motion.h4>
@@ -53,7 +50,7 @@ const Home = () => {
       </div>
 
       <motion.section
-        className='home-section-top'
+        className='HomeDance-section-top'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 2 }}
@@ -76,7 +73,7 @@ const Home = () => {
         </h2>
       </motion.section>
 
-      <section className='home-section-mid'>
+      <section className='HomeDance-section-mid'>
         <h2>
           I belive that <br />
           <b>Creativity, art, design, and technology</b>
@@ -92,7 +89,7 @@ const Home = () => {
         </h2>
       </section>
 
-      <section className='home-section-bottom'>
+      <section className='HomeDance-section-bottom'>
         <div className='text-section'>
           <b>About me</b> <br />
           <h2>
@@ -154,4 +151,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeDance;
