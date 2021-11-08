@@ -47,7 +47,7 @@ const Landing = () => {
         >
           {/* <img src={ImgDev} alt='' /> */}
           <h1>Developer</h1>
-          <Link to='homeDance' className='btn'>
+          <Link to='home' className='btn'>
             Enter
           </Link>
         </div>
@@ -58,7 +58,7 @@ const Landing = () => {
         >
           {/* <img src={ImgDance} alt='' /> */}
           <h1>Dancer</h1>
-          <Link to='homeDev' className='btn'>
+          <Link to='home' className='btn'>
             Enter
           </Link>
         </div>
