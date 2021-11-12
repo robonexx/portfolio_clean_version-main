@@ -30,7 +30,7 @@ const Home = () => {
           Robert Wägar
         </motion.h1>
       </div>
-      <div className='artsy'>
+      {/* <div className='artsy'>
         <div className='waves'>
           <span></span>
           <span></span>
@@ -47,7 +47,7 @@ const Home = () => {
           <span></span>
           <span></span>
         </div>
-      </div>
+      </div> */}
 
       <motion.section
         className='home-section-top'

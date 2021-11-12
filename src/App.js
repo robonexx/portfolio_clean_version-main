@@ -12,7 +12,6 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const location = useLocation();
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

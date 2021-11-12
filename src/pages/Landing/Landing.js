@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Landing.scss';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Landing = () => {
   const [conLeft, setConLeft] = useState(false);
@@ -20,13 +21,22 @@ const Landing = () => {
   };
 
   return (
-    <div className='landing'>
+    <motion.div
+      className='landing'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, scaleX: 0, scaleY: 0 }}
+      transition={{ duration: 1, staggerChildren: 2 }}
+    >
       <div
         className={`container ${conLeft ? 'hover-left' : null} ${
           conRight ? 'hover-right' : null
         }`}
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
           className='split left'
           onMouseEnter={handleLeftMouseEnter}
           onMouseLeave={handleLeftMouseLeave}
@@ -36,8 +46,11 @@ const Landing = () => {
           <Link to='/home' className='btn'>
             Enter
           </Link>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
           className='split right'
           onMouseEnter={handleRightMouseEnter}
           onMouseLeave={handleRightMouseLeave}
@@ -47,9 +60,9 @@ const Landing = () => {
           <Link to='/home' className='btn'>
             Enter
           </Link>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

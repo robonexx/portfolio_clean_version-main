@@ -133,28 +133,22 @@ const About = () => {
       >
         <h1>ABOUT</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius
-          porro aliquid architecto illo incidunt similique molestias illum
-          mollitia facilis, rerum ratione doloremque atque, aspernatur minus
-          fugiat laborum quas corrupti hic non quaerat dolorem natus. Maiores
-          suscipit laudantium fugiat ad maxime delectus, quos unde at iure rem,
-          cumque odio voluptate.
+          My name is Robert Wägar Im a 40+ yrs old developer based in Stockholm.
+          My background as dancer, producer, choreographer and teacher, has been
+          of great inspiration to work with creativity and communication.
+          <br />I remember as a kid having a C64 and later Amiga 500 I was
+          trying out programming on my computer mostly doing sprites and such...
+          Fastforward 2019 I felt I needed something new, I wanted to learn &
+          remebering my childhood I was thinking about my interest for computers
+          and got in to programming. I Started at freecodecamp due to a
+          recommendation from a friend. Then I took a JAVA course at Jensens and
+          also a web developer beginner course. The year after that I applied
+          and got in to the frontend education at KYH Stockholm and I'm going to
+          start my internship at addcode nov 2021 until april 2022.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam
-          laudantium nostrum delectus repudiandae et cupiditate iusto enim
-          possimus? Eligendi pariatur eveniet maiores dolor deleniti qui cum
-          laborum eaque quis nemo ea quos in, vitae, repellat quia. Hic ipsum
-          cupiditate, molestias aliquid ipsam dolores. Ipsam expedita recusandae
-          quae non. Voluptate eos ut aperiam hic, nam impedit amet! Sunt,
-          doloremque. Tempora quaerat veritatis quod asperiores at! Veritatis ex
-          quidem fugit quae rem mollitia dolorem vitae non, ut magnam quaerat
-          debitis, sed quasi voluptates distinctio, veniam fuga ab optio
-          consequatur laboriosam praesentium neque illo commodi repellendus.
-          Molestiae, blanditiis dolorum? Corporis, libero rerum?
-        </p>
+        <br />
       </motion.div>
-      {/*  <motion.ul>
+      {/*  <motion.ul className="about-list">
         {items.map(({ text, id }, i) => (
           <motion.li
             key={id}
