@@ -1,0 +1,121 @@
+
+.card-container {
+    position: absolute;
+    width: 400px;
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: 20fr 20fr;
+    grid-template-rows: repeat(auto-fit);
+    z-index: 1;
+    overflow: hidden;
+
+    @media (max-width: 40em) {
+        position: relative;
+        margin: 0 auto;
+        width: 360px;
+    }
+}
+
+.card {
+    position: relative;
+    height: 200px;
+    cursor: pointer;
+    background-color: transparent;
+    perspective: 1000px;
+    @media (max-width: 40em) {
+        height: 180px;
+    }
+  }
+  
+  .card-back h2 {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+  .card-back p {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0px;
+    z-index: 10;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: contain;
+
+    @media (max-width: 40em) {
+        height: 180px;
+    }
+  }
+  
+  .card-inner {
+    height: 200px;
+    width: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    @media (max-width: 40em) {
+        height: 180px;
+    }
+  }
+  
+  .card:hover .card-inner,
+  .card:active .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.7));
+    @media (max-width: 40em) {
+        height: 180px;
+    }
+  }
+  
+  .card-back {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    /* place-items: center; */
+  }
+  
+  h3 {
+      position: relative;
+      color: #f4f4f8;
+      font-weight: 100;
+      font-size: 0.8rem;
+  }
+  a {
+      text-decoration: none;
+      color: #f4f4f8;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.61);
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+   
+    h1 {
+      font-size: 3rem;
+    }
+    h1:before {
+      font-size: 5rem;
+      top: 10%;
+      right: 3%;
+    }
+    h1:after {
+      font-size: 2rem;
+      top: 15%;
+      left: 3%;
+      z-index: 1;
+    }
+  }

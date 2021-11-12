@@ -14,50 +14,8 @@
     @media (max-width: 40em) {
      text-align: center;
      padding: 1vh 0;
-     height: 100%;
     }
 
-
-    .about-text {
-            position: absolute;
-            top: 10%;
-            right: 5%;
-            z-index: 10;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-            width: 30%;
-
-            @media (max-width:40em) {
-              top: 30%;
-              width: 100%;
-             padding: 0 10%;
-             text-align: justify;
-            }
-    h1 {
-        margin: 20vh auto 5vh;
-        font-family: 'Inter';
-        text-align: center;
-        font-size: 5rem;
-        color: white;
-
-        @media (max-width:40em) {
-          font-size: 3rem;
-        }
-
-        &:hover {
-            /* animation: glitch 0.4s ease infinite; */
-        }
-    }
-
-    p {
-      font-size: 1rem;
-      text-shadow: 0px 5px 10px rgba(0,0,0,0.125),
-      0px 5px 5px rgba(0,0,0,0.25),
-      0px 10px 10px rgba(0,0,0,0.5);
-    }
-
-}
-
-}
 
 .text-animation {
         position: relative;
@@ -66,6 +24,11 @@
         overflow: hidden;
         text-transform: uppercase;
         z-index: 10;
+
+        @media (max-width:40em) {
+          margin-top: 2rem;
+          
+        }
 
         .first {
           margin-right: 3rem;
@@ -88,6 +51,45 @@
         }
       }
 
+      .about-text {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        z-index: 10;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        width: 30%;
+        overflow: hidden;
+
+        @media (max-width:40em) {
+          top: 30%;
+          width: 90%;
+         margin: 0 auto;
+         text-align: justify;
+        }
+h1 {
+    margin: 20vh auto 5vh;
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+
+    @media (max-width:40em) {
+      font-size: 3rem;
+    }
+
+}
+
+p {
+  font-size: 1rem;
+  text-shadow: 0px 5px 10px rgba(0,0,0,0.125),
+  0px 5px 5px rgba(0,0,0,0.25),
+  0px 10px 10px rgba(0,0,0,0.5);
+}
+
+}
+
+}
+
       .details {
         font-family: var(--font);
         z-index: 10;
@@ -100,6 +102,7 @@
         writing-mode: vertical-lr;
         text-orientation: upright;
         text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        overflow: hidden;
 
         @media (max-width: 40em) {
           display: none;
@@ -121,6 +124,7 @@
         object-fit: cover;
         object-position: left;
         z-index: -1;
+        overflow-x: hidden;
 
         @media (max-width: 40em) {
           width: 100%;
@@ -139,19 +143,20 @@
         background: rgba(0, 0, 0, 0.5);
 }
 
-.about-list {
+
+.skills-container {
   position: absolute;
+  left: 10%;
   top: 100vh;
-        width: 400px;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    li {
-            font-family: 'Inter';
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            padding: 0.25rem;
-    }
+  height: 100vh;
+  
+  @media (max-width: 40em) {
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 

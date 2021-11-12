@@ -2,33 +2,9 @@ import React from 'react';
 import './about.scss';
 import { motion } from 'framer-motion';
 import Img from '../../assets/img/originalCopy.png';
+import Skills from '../../components/skills/Skills';
 
 const transition = { duration: 2.4, ease: [0.6, 0.01, -0.05, 0.9] };
-
-const variants = {
-  visible: (i) => ({
-    opacity: 1,
-    transition: {
-      delay: i * 0.5,
-    },
-  }),
-  hidden: { opacity: 0 },
-  transition: { duration: 2 },
-};
-const items = [
-  {
-    text: 'Music',
-    id: 1,
-  },
-  {
-    text: 'Dance',
-    id: 2,
-  },
-  {
-    text: 'Develop',
-    id: 3,
-  },
-];
 
 const firstName = {
   initial: {
@@ -38,7 +14,7 @@ const firstName = {
     y: 0,
     transition: {
       delayChildren: 0.6,
-      staggerChildren: 0.04,
+      staggerChildren: 0.1,
       staggerDirection: -1,
     },
   },
@@ -52,7 +28,7 @@ const lastName = {
     y: 0,
     transition: {
       delayChildren: 0.6,
-      staggerChildren: 0.04,
+      staggerChildren: 0.1,
       staggerDirection: 1,
     },
   },
@@ -64,7 +40,7 @@ const letter = {
   },
   animate: {
     y: 1,
-    transition: { duration: 1, ...transition },
+    transition: { duration: 1.2, ...transition },
   },
 };
 
@@ -148,19 +124,10 @@ const About = () => {
         </p>
         <br />
       </motion.div>
-      {/*  <motion.ul className="about-list">
-        {items.map(({ text, id }, i) => (
-          <motion.li
-            key={id}
-            initial='hidden'
-            custom={i}
-            animate='visible'
-            variants={variants}
-          >
-            {text}
-          </motion.li>
-        ))}
-      </motion.ul> */}
+      <div className='skills-container'>
+        <h3>(Hover over the image to see some of the skills i've worked on)</h3>
+        <Skills />
+      </div>
     </motion.div>
   );
 };
