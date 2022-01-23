@@ -12,35 +12,35 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const location = useLocation();
-  const [loading, setLoading] = useState(true);
+  /* const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, []);
+  }, []); */
 
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <div>
           <Loading loading={loading} setLoading={setLoading} />
         </div>
-      ) : (
-        <div>
-          <Nav />
-          <SideBar />
-          <AnimatePresence exitBeforeEnter initial={false}>
-            <Switch location={location} key={location.pathname}>
-              <Route exact path='/' component={Landing} />
-              <Route exact path='/home' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/projects' component={Projects} />
-              <Route path='/contact' component={Contact} />
-            </Switch>
-          </AnimatePresence>
-        </div>
-      )}
+      ) : ( */}
+      <div>
+        <Nav />
+        <SideBar />
+        <AnimatePresence exitBeforeEnter initial={false}>
+          <Switch location={location} key={location.pathname}>
+            <Route exact path='/' component={Landing} />
+            <Route exact path='/home' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/projects' component={Projects} />
+            <Route path='/contact' component={Contact} />
+          </Switch>
+        </AnimatePresence>
+      </div>
+      {/*   )} */}
     </div>
   );
 }

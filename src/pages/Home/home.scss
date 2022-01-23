@@ -5,7 +5,7 @@
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
-
+    color: #FCF6BA;
 }
 /* 
 .artsy {
@@ -134,7 +134,14 @@
    
     h1 {
         font-size: 3rem;
-        color: var(--color-text-2nd);
+        background-color: #fbf5b7;
+        background-image: linear-gradient(120deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        font-weight: 800;
         text-transform: uppercase;
         transition: transform 1s ease;
         font-family: 'Playfair Display', sans-serif;
@@ -223,7 +230,7 @@
     
 
     h2 {
-        color: var(--color-text-2nd);
+        color: inherit;
         margin: 2rem 0;
         font-size: 1.4rem;
         font-weight: 100;
@@ -298,6 +305,7 @@
     h2 {
         font-size: 1.4rem;
         font-weight: 100;
+        color: #FCF6BA;
         
 
         @media (max-width: 960px) {
@@ -326,7 +334,7 @@
     width: 80%;
     margin: 0 auto;
     height: 100vh;
-    color: var(--color-text-2nd);
+    color: inherit;
     text-align: left;
     z-index: 2;
     display: flex;

@@ -12,7 +12,7 @@
     --color-card-bg: #0a0a24ec;
     --color-text: #f4f4f8;
     --color-text-2nd: #ec4d37;
-    --color-text-dark: #282828;
+    --color-text-dark: #121212;
     
   }
 
@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, #282828,  50%)) {
     // For Google Chrome
     &::-webkit-scrollbar {
       width:  $size;
@@ -48,7 +48,7 @@ body {
     width: 100vw;
     height: 100%;
     background-color: var(--color-bg);
-    @include scrollbars(10px, var(--color-text-2nd), var(--color-bg));
+    @include scrollbars(10px, #BF953F, var(--color-bg));
     overflow-x: hidden;
     
 }
