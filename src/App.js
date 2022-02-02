@@ -3,6 +3,7 @@ import Landing from './pages/Landing/Landing';
 import Nav from './components/Nav/Nav';
 import SideBar from './components/sidebar/sidebar';
 import Home from './pages/Home/Home';
+import HomeDancer from './pages/Home/HomeDancer';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
@@ -34,6 +35,7 @@ function App() {
           <Switch location={location} key={location.pathname}>
             <Route exact path='/' component={Landing} />
             <Route exact path='/home' component={Home} />
+            <Route exact path='/homedancer' component={HomeDancer} />
             <Route path='/about' component={About} />
             <Route path='/projects' component={Projects} />
             <Route path='/contact' component={Contact} />

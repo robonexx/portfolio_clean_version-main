@@ -41,7 +41,6 @@ const Landing = () => {
           onMouseEnter={handleLeftMouseEnter}
           onMouseLeave={handleLeftMouseLeave}
         >
-          {/* <img src={ImgDev} alt='' /> */}
           <h1>Developer</h1>
           <Link to='/home' className='btn'>
             Enter
@@ -55,9 +54,8 @@ const Landing = () => {
           onMouseEnter={handleRightMouseEnter}
           onMouseLeave={handleRightMouseLeave}
         >
-          {/* <img src={ImgDance} alt='' /> */}
           <h1>Dancer</h1>
-          <Link to='/home' className='btn'>
+          <Link to='/homedancer' className='btn'>
             Enter
           </Link>
         </motion.div>

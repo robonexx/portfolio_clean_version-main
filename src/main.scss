@@ -44,6 +44,15 @@
     }
   }
 
+  @font-face {
+    font-family: 'Kenoky';
+    src: url('./assets/fonts/KenokyLight.ttf');
+  }
+  @font-face {
+    font-family: 'Coffekan';
+    src: url('./assets/fonts/CoffekanRegular.ttf');
+  }
+
 body {
     width: 100vw;
     height: 100%;
