@@ -30,24 +30,6 @@ const Home = () => {
           Robert Wägar
         </motion.h1>
       </div>
-      {/* <div className='artsy'>
-        <div className='waves'>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div> */}
 
       <motion.section
         className='home-section-top'
@@ -117,33 +99,36 @@ const Home = () => {
             <br />
           </h2>
           <div className='technologies'>
-            <span>Here are the technologies I worked with so far:</span>
+            <span>Here is a list of my tools I work with:
+              <br />
+              Higlighted = more <br/>Dimmed = less</span>
             <br />
             <br />
+            <div className="languages">
+              <h4>HTML/CSS</h4>
+              <h4>Sass</h4>
             <h4>Javascript</h4>
             <h4>React</h4>
+            <h4>Framer motion</h4>
             <h4>Node.js</h4>
             <h4>Firebase</h4>
             <h4>MongoDb</h4>
             <h4>Github</h4>
             <h4>Figma</h4>
-            <h4>HTML/Css</h4>
+              <h4 className="dimmed">Next.js</h4>
+              <h4 className="dimmed">PHP</h4>
+              <h4 className="dimmed">Wordpress</h4>
+              <h4 className='dimmed'>Less</h4>
+              <h4 className="dimmed">Styled Components</h4>
+              <h4 className="dimmed">Bootstrap</h4>
+              <h4 className="dimmed">JAVA</h4>
+            </div>
+           
+            
           </div>
           <br />
           <br />
-          <h2>
-            So why did I write so far? Cause the knowledge and learning is
-            endless & my goal is to keep learning as I go and work with
-            different projects <br />
             <Link to='/about'>Read more about me...</Link>
-          </h2>
-        </div>
-
-        <div className='img-section'>
-          <div className='img-container'>
-            <div className='img-overlay'></div>
-            <img src={Img} alt='' />
-          </div>
         </div>
       </section>
     </motion.div>

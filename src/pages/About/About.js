@@ -88,17 +88,7 @@ const About = () => {
         </motion.span>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 1.2, ...transition },
-        }}
-        className='details'
-      >
-        <div className='contact'>Contact robertwagar@gmail.com</div>
-      </motion.div>
+     
 
       <motion.div
         initial={{ opacity: 0, scaleY: 0 }}
@@ -109,7 +99,7 @@ const About = () => {
       >
         <h1>ABOUT</h1>
         <p>
-          My name is Robert Wägar Im a 40+ yrs old developer based in Stockholm.
+          My name is Robert Wägar Im a developer living in Stockholm/ Sweden.
           My background as dancer, producer, choreographer and teacher, has been
           of great inspiration to work with creativity and communication.
           <br />I remember as a kid having a C64 and later Amiga 500 I was
@@ -125,7 +115,7 @@ const About = () => {
         <br />
       </motion.div>
       <div className='skills-container'>
-        <h3>(Hover over the image to see some of the skills i've worked on)</h3>
+        <h1 data-text="I like em EFX">I like em EFX</h1>
         <Skills />
       </div>
     </motion.div>

@@ -8,7 +8,6 @@
     align-items: center;
     justify-self: center;
     color: var(--color-text);
-    padding: 1vh 20vw;
     overflow-x: hidden;
    
     @media (max-width: 40em) {
@@ -24,6 +23,7 @@
         overflow: hidden;
         text-transform: uppercase;
         z-index: 10;
+        text-align: center;
 
         @media (max-width:40em) {
           margin-top: 2rem;
@@ -31,7 +31,7 @@
         }
 
         .first {
-          margin-right: 3rem;
+          margin-right: 2rem;
 
           @media (max-width:40em) {
            margin-right: 1rem;
@@ -59,7 +59,6 @@
         text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
         width: 30%;
         overflow: hidden;
-
         @media (max-width:40em) {
           top: 30%;
           width: 90%;
@@ -67,7 +66,7 @@
          text-align: justify;
         }
 h1 {
-    margin: 20vh auto 5vh;
+    margin: 15vh auto 1rem;
     font-family: 'Inter';
     text-align: center;
     font-size: 5rem;
@@ -80,40 +79,14 @@ h1 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-shadow: 0px 5px 10px rgba(0,0,0,0.125),
   0px 5px 5px rgba(0,0,0,0.25),
   0px 10px 10px rgba(0,0,0,0.5);
 }
-
+}
 }
 
-}
-
-      .details {
-        font-family: var(--font);
-        z-index: 10;
-        position: absolute;
-        top: 5vh;
-        right: 2vw;
-        cursor: pointer;
-        color: #968388;
-        text-transform: uppercase;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-        overflow: hidden;
-
-        @media (max-width: 40em) {
-          display: none;
-        }
-
-      }
-      .details:hover {
-        color: #fcfcfb;
-        filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.432));
-        transform: scale(1.1);
-      }
 
 .about-img {
         position: absolute;
@@ -146,9 +119,35 @@ p {
 
 .skills-container {
   position: absolute;
-  left: 10%;
   top: 100vh;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    position: relative;
+    font-size: 10rem;
+    margin: 0 auto 1rem;
+    padding: 0;
+    
+  }
+
+  h1:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 8.3rem;
+    background: linear-gradient(0deg, #BF953F 0, #FCF6BA 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+  }
+
   
   @media (max-width: 40em) {
     position: relative;

@@ -1,0 +1,203 @@
+.about-dancer {
+    position: relative;
+    margin-top: 8vh;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    color: var(--color-text);
+    overflow-x: hidden;
+   
+    @media (max-width: 40em) {
+     text-align: center;
+    }
+
+    &.noselect {
+      -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome, Edge, Opera and Firefox */
+    }
+
+
+.text-animation {
+        position: relative;
+        width: 100vw;
+        
+        overflow: hidden;
+        text-transform: uppercase;
+        z-index: 10;
+        text-align: center;
+
+        @media (max-width:40em) {
+          margin-top: 2rem;
+          
+        }
+
+        .first, .last {
+          margin: 0 2rem;
+
+          @media (max-width:40em) {
+           margin: 0 1rem;
+          }
+        }
+        span {
+          display: inline-block;
+          position: relative;
+          font-weight: 800;
+          font-size: 6rem;
+          font-family: var(--big-font);
+          text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+
+          @media (max-width:40em) {
+            font-size: 4rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .about-text-dancer {
+        position: absolute;
+        font-family: 'Inter';
+        top: 20%;
+        right: 5%;
+        z-index: 10;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        width: 30%;
+        overflow: hidden;
+
+        // glass effect
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, .15);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 2px 0px white;
+        background: rgba(0, 0, 0, .0225);
+        overflow: hidden;
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(3px);
+        border-radius: 20px;
+        padding: 1rem 2rem;
+
+        @media (max-width:40em) {
+            position: relative;
+            right: 0;
+            width: 80vw;
+            margin: 100vh auto;
+            text-align: justify;
+            width: 100%;
+            border-radius: 0;
+            border: none;
+        }
+h1 {
+    margin: 1rem auto 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+
+    @media (max-width:40em) {
+      font-size: 3rem;
+    }
+
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 100;
+  text-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+}
+
+
+.about-video {
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    width: 80vw;
+    height: 82vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    overflow-x: hidden;
+    border-radius: 5px;
+    border: 1px solid #fbf5b7;
+    border-top: none;
+
+    @media (max-width: 40em) {
+      border-radius: 0;
+      width: 100vw;
+      left: 0;
+      
+    }
+
+}
+
+.dance-text-wrapper {
+  margin-top: 100vh;
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+  background: #121212;
+  
+
+  @media (max-width: 40em) {
+    position: absolute;
+    margin-top: 85vh;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .dance-text {
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30vw;
+    background: url('../../assets/img/image00001.gif');
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+    text-shadow: inset rgba(0, 0, 0, .0225);
+
+    &::before {
+      content: 'Best medicine for your body is';
+      position: absolute;
+      top: 5vh;
+      left: 5vw;
+      font-size: 2rem;
+      color: white;
+      z-index: 10;
+      @media (max-width: 40em) {
+        visibility: hidden;
+      }
+    }
+    &::after {
+      content: 'and music, keeps us young!';
+      position: absolute;
+      bottom: 5vh;
+      right: 5vw;
+      font-size: 2rem;
+      color: white;
+      z-index: 10;
+
+      @media (max-width: 40em) {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+}
+

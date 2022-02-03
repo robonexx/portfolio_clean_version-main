@@ -23,7 +23,7 @@ const HomeDancer = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Hello, my name is{' '}
+          Hello, my name is
         </motion.h4>
         <motion.h1
           initial={{ x: -200, opacity: 0 }}

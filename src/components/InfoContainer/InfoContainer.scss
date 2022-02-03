@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700');
+
+
+.cards {
+  display: flex;
+  width: 60%;
+  margin: 3rem auto;
+
+  @media (max-width: 40em) {
+    width: 95%;
+  }
+ 
+}
+
+.card {
+  display: flex;
+  background-image: linear-gradient(120deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  box-shadow: 10px 10px 25px rgba(black, .20);
+  border-radius: 10px;
+}
+
+.card + .card {
+  margin-left: 25px;
+
+}
+
+.card-header {
+  /* url(https://unsplash.it/700/650) */
+  background-color: #ffeaa7;
+  background-image: linear-gradient(315deg, #ffeaa7 0%, #000000 74%);
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 25px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0, .75);
+  display: flex;
+  transition: top 300ms ease-out,
+    left 300ms ease-out,
+    bottom 300ms ease-out,
+    right 300ms ease-out,;
+    border-radius: 10px;
+
+}
+
+.card-header:hover {
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px; 
+    font-size: 2rem;
+}
+
+.card-title {
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: .9;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  transition: font-size 0.2s ease;
+
+  @media (max-width: 40em) {
+    font-size: 1rem;
+  }
+
+&.card-header:hover {
+  font-size: 2rem;
+}
+}
+
+.card-more-info,
+.card-less-info {
+  background: rgba(255,255,255, .8);
+  padding: .5em 1.25em;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 300;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-top: auto;
+  transition: transform 500ms ease-out,
+    background 200ms ease-out;
+}
+
+.card-more-info:focus,
+.card-less-info:focus,
+.card-more-info:hover,
+.card-less-info:hover {
+  outline: none;
+  background: white;
+}
+
+.card-more-info {
+   transition-delay: 500ms, 0ms;
+}
+
+.card-less-info {
+  margin-left: auto;
+  transform: translateX(130%);
+}
+
+.card-content {
+  position: relative;
+  top: 50%;
+  padding: 25px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+  .card-desc {
+    font-size: 1.2rem;
+  }
+  .card-link {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    a {
+      color: #222222;
+    }
+  :hover {
+    color: #888;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.155);
+  }
+}
+      
+    
+
+.heart {
+  --size: 1.5em;
+  width: var(--size);
+  height: var(--size);
+  margin-top: auto;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: .75em;
+  transition: transform 300ms cubic-bezier(.38,.5,.5,1.5);
+  @media (max-width: 40em) {
+    --size: 1.2em;
+    margin-bottom: -0.5em;
+   }
+}
+
+.heart-checkbox {
+  transform: rotate(45deg);
+  position: absolute;
+  appearance: none;
+  width: 150%;
+  height: 150%;
+  top: -50%;
+  left: 45%;
+  border-radius: 50% 0 0 0;
+  // background: rgba(green, .5);
+  z-index: 100;
+  cursor: pointer;
+
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.heart-checkbox:focus {
+  outline: none;
+}
+
+.heart-icon {
+  transform: rotate(45deg);
+  width: var(--size);
+  height: var(--size);
+  background: pink;
+  position: absolute;
+  filter: drop-shadow(0px 2px 3px rgba(0,0,0.255));
+  transition: background 125ms;
+}
+
+.heart-icon::before,
+.heart-icon::after {
+  content: '';
+  display: block;
+  background: inherit;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart-icon::before {
+  top: 0;
+  left: -50%;
+}
+
+.heart-icon::after {
+  left: 0;
+  top: -50%;
+}
+
+.heart-checkbox:checked ~ .heart-icon {
+  background: red;
+}
+
+.likes {
+  font-family: 'Coffekan';
+  color: #222222;
+  position: absolute;
+  left: 8vw;
+  bottom: 1em;
+  top: auto;
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.5);
+
+  @media (max-width: 40em) {
+    position: absolute;
+    font-size: 1.4rem;
+    left: 20vw;
+    bottom: 0.5em;
+   }
+
+  span {
+    font-size: 1.6rem;
+    font-family: 'Kenoky';
+    background: white;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    filter: drop-shadow(0px 2px 3px rgba(0,0,0.255));
+
+  }
+}
+
+ // open state
+ 
+.card-open .card-header {
+  bottom: 50%;
+  left: 25px;
+  right: 25px;
+  top: 25px;
+}
+
+.card-open .card-more-info {
+  transform: translateY(300%);
+  transition-delay: 0ms;
+}
+
+.card-open .card-less-info {
+  transform: translateX(0);
+  transition-delay: 500ms, 0ms;
+}

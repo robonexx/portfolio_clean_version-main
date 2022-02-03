@@ -15,64 +15,64 @@ import Github from '../../assets/img/github.png';
 
 export default function Skills() {
   return (
-    <div className='card-container'>
-      <div className='card'>
-        <div className='card-inner'>
-          <div className='card-front'>
+    <div className='skill-card-container'>
+      <div className='skill-card'>
+        <div className='skill-card-inner'>
+          <div className='skill-card-front'>
             <img src={Gta1} alt='' />
           </div>
-          <div className='card-back'>
+          <div className='skill-card-back'>
             <img src={Js} alt='' />
           </div>
         </div>
       </div>
-      <div className='card'>
-        <div className='card-inner'>
-          <div className='card-front'>
+      <div className='skill-card'>
+        <div className='skill-card-inner'>
+          <div className='skill-card-front'>
             <img src={Gta2} alt='' />
           </div>
-          <div className='card-back'>
+          <div className='skill-card-back'>
             <img src={Html} alt='' />
           </div>
         </div>
       </div>
-      <div className='card'>
-        <div className='card-inner'>
-          <div className='card-front'>
+      <div className='skill-card'>
+        <div className='skill-card-inner'>
+          <div className='skill-card-front'>
             <img src={Gta3} alt='' />
           </div>
-          <div className='card-back'>
+          <div className='skill-card-back'>
             <img src={Css} alt='' />
           </div>
         </div>
       </div>
-      <div className='card'>
-        <div className='card-inner'>
-          <div className='card-front'>
+      <div className='skill-card'>
+        <div className='skill-card-inner'>
+          <div className='skill-card-front'>
             <img src={Gta4} alt='' />
           </div>
-          <div className='card-back'>
+          <div className='skill-card-back'>
             <img src={ReactImg} alt='' />
           </div>
         </div>
       </div>
-      <div className='card'>
-        <div className='card-inner'>
-          <div className='card-front'>
+      <div className='skill-card'>
+        <div className='skill-card-inner'>
+          <div className='skill-card-front'>
             <img src={Gta5} alt='' />
           </div>
-          <div className='card-back'>
-            <img src={Node} alt='' />
+          <div className='skill-card-back'>
+            <img src={Github} alt='' />
           </div>
         </div>
       </div>
-      <div className='card'>
-        <div className='card-inner'>
-          <div className='card-front'>
+       <div className='skill-card'>
+        <div className='skill-card-inner'>
+          <div className='skill-card-front'>
             <img src={Gta6} alt='' />
           </div>
-          <div className='card-back'>
-            <img src={Github} alt='' />
+          <div className='skill-card-back'>
+            <img src={Node} alt='' />
           </div>
         </div>
       </div>

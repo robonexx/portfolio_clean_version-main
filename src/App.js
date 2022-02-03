@@ -8,8 +8,9 @@ import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import { Switch, Route, useLocation } from 'react-router-dom';
-import Loading from './components/loading/Loading';
+/* import Loading from './components/loading/Loading'; */
 import { AnimatePresence } from 'framer-motion';
+import AboutDancer from './pages/About/AboutDancer';
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,7 @@ function App() {
             <Route exact path='/home' component={Home} />
             <Route exact path='/homedancer' component={HomeDancer} />
             <Route path='/about' component={About} />
+            <Route path='/aboutdancer' component={AboutDancer} />
             <Route path='/projects' component={Projects} />
             <Route path='/contact' component={Contact} />
           </Switch>
