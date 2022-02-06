@@ -36,7 +36,7 @@
             position: absolute;
             right: 10vw;
             top: 30vh;
-            font-size: 5rem;
+            font-size: clamp(2rem, 3rem, 5rem);
             font-weight: 800;
             font-family: 'Coffekan';
             text-shadow: 1px 1px 2px #FCF6BA;
@@ -58,7 +58,7 @@
     width: 80%;
     height: 100%;
     display: block;
-    top: 30vh;
+    
     left: 10vw;
     z-index: 1;
     
@@ -68,7 +68,7 @@
         padding: 0 2rem;
         width: 90%;
         left: 0;
-        top: 20vh;
+        top: 10vh;
     }
     h4 {
         font-size: 2rem;
@@ -185,7 +185,7 @@
 
 .home-section-mid {
     position: relative;
-    top: 5vh;
+    top: 0vh;
     right: 10vw;
     width: 80%;
     margin: 0 auto;
@@ -232,7 +232,7 @@
 }
 .home-section-bottom {
     position: relative;
-    top: 10vh;
+    top: 5vh;
     left: 10vw;
     right: 10vw;
     width: 80%;

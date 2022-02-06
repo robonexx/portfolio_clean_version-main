@@ -1,9 +1,31 @@
-import React from 'react';
+import { useEffect } from 'react';
+
+// mail go
+import mailgo, { MailgoConfig } from 'mailgo';
+
+// animation effects
 import { motion } from 'framer-motion';
+
+// styles and icons
 import './sidebar.scss';
-import { FiLinkedin, FiGithub, FiFacebook, FiInstagram } from 'react-icons/fi';
+import {
+  FiLinkedin,
+  FiGithub,
+  FiFacebook,
+  FiInstagram,
+  FiMail,
+} from 'react-icons/fi';
+
+// mail go darkmode
+const mailgoConfig: MailgoConfig = {
+  light: true,
+};
 
 const SideBar = () => {
+  useEffect(() => {
+    mailgo(mailgoConfig);
+  }, []);
+
   return (
     <motion.div
       className='sidebar'
@@ -13,9 +35,17 @@ const SideBar = () => {
     >
       <div className='social'>
         <a
+          href='mailto:robertwagar@gmail.com'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          <FiMail className='soc-item soc-icon' />
+        </a>
+
+        <a
           href='https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/'
           target='_blank'
-          rel='noreferrer'
+          rel='noreferrer noopener'
         >
           {' '}
           <FiLinkedin className='soc-item soc-icon' />
@@ -28,7 +58,7 @@ const SideBar = () => {
         <a
           href='https://facebook.com/robert.r.wagar'
           target='_blank'
-          rel='noreferrer'
+          rel='noreferrer noopener'
         >
           {' '}
           <FiFacebook className='soc-item soc-icon' />
@@ -37,7 +67,7 @@ const SideBar = () => {
         <a
           href='https://www.instagram.com/r.o.b_o.n.e/'
           target='_blank'
-          rel='noreferrer'
+          rel='noreferrer noopener'
         >
           <FiInstagram className='soc-item soc-icon' />
         </a>
