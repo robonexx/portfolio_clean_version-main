@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import MenuItems from '../menuItems/MenuItems'
 import Logo from '../logo/Logo'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
-import './nav.scss'
+import './Nav.scss'
 
 const logoVariants = {
   hidden: {
@@ -57,7 +57,6 @@ const Nav = ({idx}) => {
             <Logo className="logo" />
           </Link>
         </motion.div>
-        
         
         <motion.div className="menu-icon" onClick={handleClick}
         initial={{ y: -250, opacity: 0 }}

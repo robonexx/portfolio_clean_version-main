@@ -7,13 +7,18 @@ import HomeDancer from './pages/Home/HomeDancer';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 /* import Loading from './components/loading/Loading'; */
 import { AnimatePresence } from 'framer-motion';
 import AboutDancer from './pages/About/AboutDancer';
+import { useTheme } from './hooks/useTheme'
+import ThemeSelector from './themes/ThemeSelector';
 
 function App() {
+  /* const [activeTheme, setActiveTheme] = useState('light');
+  const [mountedComponent, setMountedComponent] = useState(false) */
   const location = useLocation();
+  const { theme, page } = useTheme()
   /* const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,9 +26,18 @@ function App() {
       setLoading(false);
     }, 3000);
   }, []); */
-
+  /* const setMode = mode => {
+    window.localStorage.setItem('theme', mode)
+    setTheme(mode)
+  };
+  useEffect(() => {
+        const localTheme = window.localStorage.getItem('theme');
+        localTheme ? setTheme(localTheme) : setMode('light')
+        setMountedComponent(true)
+    }, []);
+ */
   return (
-    <div>
+    <div className={`${theme}`}>
       {/* {loading ? (
         <div>
           <Loading loading={loading} setLoading={setLoading} />
@@ -31,6 +45,7 @@ function App() {
       ) : ( */}
       <div>
         <Nav />
+        <ThemeSelector />
         <SideBar />
         <AnimatePresence exitBeforeEnter initial={false}>
           <Switch location={location} key={location.pathname}>
@@ -44,8 +59,7 @@ function App() {
           </Switch>
         </AnimatePresence>
       </div>
-      {/*   )} */}
-    </div>
+  </div>
   );
 }
 

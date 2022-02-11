@@ -62,3 +62,7 @@ body {
     overflow-x: hidden;
     
 }
+
+.dark {
+    filter: invert(100%);
+}
