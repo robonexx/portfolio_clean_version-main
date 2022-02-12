@@ -11,14 +11,15 @@ import { BrowserRouter as Switch, Route, useLocation } from 'react-router-dom';
 /* import Loading from './components/loading/Loading'; */
 import { AnimatePresence } from 'framer-motion';
 import AboutDancer from './pages/About/AboutDancer';
-import { useTheme } from './hooks/useTheme'
+import { useTheme } from './hooks/useTheme';
 import ThemeSelector from './themes/ThemeSelector';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   /* const [activeTheme, setActiveTheme] = useState('light');
   const [mountedComponent, setMountedComponent] = useState(false) */
   const location = useLocation();
-  const { theme, page } = useTheme()
+  const { theme, page } = useTheme();
   /* const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -49,17 +50,19 @@ function App() {
         <SideBar />
         <AnimatePresence exitBeforeEnter initial={false}>
           <Switch location={location} key={location.pathname}>
-            <Route exact path='/' component={Landing} />
-            <Route exact path='/home' component={Home} />
-            <Route exact path='/homedancer' component={HomeDancer} />
-            <Route path='/about' component={About} />
-            <Route path='/aboutdancer' component={AboutDancer} />
-            <Route path='/projects' component={Projects} />
-            <Route path='/contact' component={Contact} />
+            <ScrollToTop>
+              <Route exact path='/' component={Landing} />
+              <Route exact path='/home' component={Home} />
+              <Route exact path='/homedancer' component={HomeDancer} />
+              <Route path='/about' component={About} />
+              <Route path='/aboutdancer' component={AboutDancer} />
+              <Route path='/projects' component={Projects} />
+              <Route path='/contact' component={Contact} />
+            </ScrollToTop>
           </Switch>
         </AnimatePresence>
       </div>
-  </div>
+    </div>
   );
 }
 
