@@ -11,7 +11,7 @@ export default function ThemeSelector() {
   const { changeTheme, theme } = useTheme();
 
   const toggleMode = () => {
-      changeTheme(theme === 'dark' ? 'light' : 'dark');
+      changeTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   return (
@@ -23,9 +23,10 @@ export default function ThemeSelector() {
           alt='dark/light toggle icon'
         /> */}
                <button onClick={toggleMode}>
-      {theme === "light" ?
+          {theme === "dark" ?
+            <FiSun /* width="26" height="26" viewBox="0 0 26 26" */ className='sun'></FiSun>: 
       <FiMoon /* width="26" height="26" viewBox="0 0 26 26" */ className='moon'></FiMoon>
-      :<FiSun /* width="26" height="26" viewBox="0 0 26 26" */ className='sun'></FiSun>
+
     } 
     </button>
           </div>

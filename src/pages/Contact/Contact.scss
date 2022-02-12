@@ -1,0 +1,41 @@
+.contact {
+    min-width: 1200px;
+    width: 100%;
+    margin: 10% auto 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    img {
+        width: 400px;
+    }
+
+
+    .left,
+    .right {
+        width: 45%;
+    };
+
+    .right .img-wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        align-items: center;
+        text-align: center;
+
+        .img-left {
+            grid-column: 1 / 8;
+            grid-row: 1;
+            padding-top: 80%;
+            z-index: 10;
+        }
+
+        .img-right {
+            grid-column: 4 / -1;
+            grid-row: 1;
+            padding-bottom: 30%;
+            z-index: 5;
+
+        }
+    }
+}

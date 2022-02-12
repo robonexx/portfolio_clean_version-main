@@ -22,7 +22,7 @@ const themeReducer = (state, action) => {
 export function ThemeProvider({ children }) {
   const [state, dispatch] = useReducer(themeReducer, {
     page: 'dev',
-    theme: 'dark',
+    theme: 'light',
   });
 
   const changePage = (page) => {

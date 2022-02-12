@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import './ContactForm.js'
+import './ContactForm.scss'
 import { FiLinkedin, FiGithub, FiFacebook, FiInstagram } from 'react-icons/fi';
 
 export default function ContactForm() {
@@ -39,8 +39,8 @@ export default function ContactForm() {
            }
         };
     return (
-        <div className='contact-wrapper'>
-        <div className='contact-container'>
+        <div className='contact-form-wrapper'>
+        <div className='contact-info-container'>
           <h1 className='header'>Contact Information</h1>
           <p className='contact-text'>
             Fill the form to send me a message, & I´ll get back to you within 24
@@ -125,7 +125,7 @@ export default function ContactForm() {
                     <button 
                      type='submit'
                      value='submit'
-                     classname='submit-btn'>Submit</button>
+                     className='submit-btn'>Submit</button>
             <p className='form-answer'>Thanks for Your mail!</p>
           </form>
         </div>

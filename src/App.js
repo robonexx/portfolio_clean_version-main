@@ -7,7 +7,7 @@ import HomeDancer from './pages/Home/HomeDancer';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
-import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Switch, Route, useLocation } from 'react-router-dom';
 /* import Loading from './components/loading/Loading'; */
 import { AnimatePresence } from 'framer-motion';
 import AboutDancer from './pages/About/AboutDancer';
