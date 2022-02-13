@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 /* import { motion } from 'framer-motion' */
-import navItems from '../../content/NavContent';
+import devNavItems from '../../content/DevNavContent';
 /* 
 const itemVariants = {
     hidden: {
@@ -30,7 +30,7 @@ const MenuItems = () => {
     return (
         
         <>
-        {navItems.map((item, idx) => {
+        {devNavItems.map((item, idx) => {
               return (
                   <li key={idx}
                      /*  variants={itemVariants}

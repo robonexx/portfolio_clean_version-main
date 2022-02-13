@@ -1,8 +1,8 @@
 import React from 'react';
 import './about.scss';
 import { motion } from 'framer-motion';
-import Img from '../../assets/img/originalCopy.png';
-import Skills from '../../components/skills/Skills';
+import Img from '../../../assets/img/originalCopy.png';
+import Skills from '../../../components/skills/Skills';
 
 const transition = { duration: 2.4, ease: [0.6, 0.01, -0.05, 0.9] };
 

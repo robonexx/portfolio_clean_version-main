@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutDancer.scss';
 import { motion } from 'framer-motion';
-import Img from '../../assets/video/judge_solo.webm';
+import Img from '../../../assets/video/judge_solo.webm';
 
 const transition = { duration: 2.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -114,9 +114,8 @@ const AboutDancer = () => {
         <br />
       </motion.div>
       <div className='dance-text-wrapper'>
-      <h1 className="dance-text">DANCE</h1>
+        <h1 className='dance-text'>DANCE</h1>
       </div>
-      
     </motion.div>
   );
 };

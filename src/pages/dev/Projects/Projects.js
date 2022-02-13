@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Projects.scss';
 import { motion } from 'framer-motion';
 // componets
-import InfoContainer from '../../components/InfoContainer/InfoContainer';
+import InfoContainer from '../../../components/InfoContainer/InfoContainer';
 
 const Projects = () => {
   const [count, setCount] = useState(0);

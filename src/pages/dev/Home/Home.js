@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.scss';
 import { motion } from 'framer-motion';
-import Img from '../../assets/img/ruperto.jpg';
+import Img from '../../../assets/img/ruperto.jpg';
 
 const Home = () => {
   return (
